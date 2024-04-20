@@ -4,7 +4,6 @@
 \usepackage[super,comma,sort&compress]{natbib}
 \usepackage{lmodern}
 \usepackage{authblk} % To add affiliations to authors
-\usepackage{multicol}
 \usepackage{amssymb,amsmath}
 \usepackage{wrapfig}
 \usepackage{graphicx,grffile}
@@ -32,11 +31,6 @@
 	\usepackage{microtype}
 	\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-
-\usepackage[utf8]{inputenc}
-\usepackage[style=apa,backend=biber]{biblatex}
-\addbibresource{refs.bib} 
-\setlength\bibitemsep{2\itemsep}
 
 \usepackage{lipsum} % for dummy text only REMOVE
 
@@ -106,56 +100,46 @@
 %==============================
 \usepackage{hyperref}
 \hypersetup{
-	pdftitle={NLP4Health_Assignment3_Halim},
+	unicode=true,
+	pdftitle={NLP4Heatlh_Assignment3_Halim},
+	pdfauthor={Jule Valendo Halim - 1425567},
+	pdfkeywords={keyword1, keyword2},
+	pdfborder={0 0 0},
+	breaklinks=true
 }
 \urlstyle{same}  % don't use monospace font for urls
 %==============================
 
 % reduce space between title and begining of page
-\title{\vspace{-2em} Evaluating Drug Efficacy Through Patient Sentiment}
-\author[ ]{\bf\fontsize{13}{14}\selectfont Jule Valendo Halim - 1425567\vspace{1em}}
+\title{\vspace{-2em} Predicting Drug Efficacy Through Patient Sentiment}
+\author[ ]{\bf\fontsize{13}{14}\selectfont Jule Valendo Halim -1425567\vspace{-.7em}}
+\affil[1]{\bf\fontsize{13}{14}\selectfont University of Melbourne;}
 \date{} % add no date (by default date is added)
 
 %==============================
 \begin{document}
-
 \maketitle
 \vspace{-4em} %separation between the affiliations and abstract
 %==============================
-
-\begin{multicols}{2}
 
 %==============================
 \section{Abstract}\label{abstract}
 %==============================
 
-\emph{Obtain some sort of machine learning using just the adverse drug reactions based on the medicine, and then compare it with the machine learning using the text data somehow.}
-
-
-
-
 %==============================
 \section{Introduction}\label{introduction}
 %==============================
-Use some citation here such as DrugBank (\cite{knuth:1984}), or SIDER (\cite{latex2e}). 
-
-%==============================
-\section{Background}\label{background}
-%==============================
-
-test
+Use some citation here such as DrugBank\cite{drugbank}, or SIDER\cite{sider}. \lipsum[3-4]
 
 %==============================
 \section{Methods}\label{methods}
 %==============================
 
-test
 
 %==============================
 \subsection{Data sources}\label{data-sources}
 %==============================
 
-test
 
 %==============================
 \subsection{Measures}\label{measures}
@@ -172,12 +156,11 @@ You can use all the cool math power of \LaTeX{} $A$ is defined as follows:
 \subsubsection{A second metric.}\label{metric-2}
 %==============================
 
-test
 
 
 \begin{exm}
 
-This is an example 
+This is an example \lipsum[2]
 
 \end{exm}
 
@@ -186,48 +169,18 @@ This is an example
 \subsection{Evaluation}\label{evaluation}
 %==============================
 
-test
 
 %==============================
 \section{Results}\label{results}
 %==============================
 
-test
-
 %==============================
-\section{Discussion}\label{discussion}
-%==============================
-
-test
-
-%==============================
-\section{Conclusion}\label{conclusion}
-%==============================
-
-test
-
-\end{multicols}
-
-%==============================
-\section{Acknowledgements}\label{acknowledgements}
-%==============================
-Remember to acknowledge your funding institution\ldots
-
-
-%==============================
-\section{Bibliography}\label{bibliography}
-\printbibliography[heading=none]
+\section{Discussion and Conclusion}\label{discussion and conclusion}
 %==============================
 
 %==============================
-\section{Appendix}\label{appendix}
+\bibliographystyle{vancouver}
+\bibliography{literature}
 %==============================
-test
-
-
-
-
 
 \end{document}
-
-

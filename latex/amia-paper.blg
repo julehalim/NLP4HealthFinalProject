@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: amia-paper.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+The style file: vancouver.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: literature.bib
+You've used 2 entries,
+            3507 wiz_defined-function locations,
+            703 strings with 5404 characters,
+and the built_in function-call counts, 5111 in all, are:
+= -- 600
+> -- 52
+< -- 16
++ -- 25
+- -- 12
+* -- 421
+:= -- 563
+add.period$ -- 10
+call.type$ -- 2
+change.case$ -- 0
+chr.to.int$ -- 36
+cite$ -- 2
+duplicate$ -- 409
+empty$ -- 493
+format.name$ -- 13
+if$ -- 1192
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 25
+newline$ -- 15
+num.names$ -- 2
+pop$ -- 59
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 51
+stack$ -- 0
+substring$ -- 993
+swap$ -- 55
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 25
+width$ -- 3
+write$ -- 27

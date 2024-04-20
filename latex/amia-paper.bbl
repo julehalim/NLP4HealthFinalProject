@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{drugbank}
+Wishart DS, Knox C, Guo A, Shrivastava S, Hassanali M, Stothard P, et~al.
+\newblock DrugBank: a comprehensive resource for in silico drug discovery and
+  exploration.
+\newblock Nucleic Acids Research. 2006;34(Database-Issue):668-72.
+\newblock Available from:
+  \url{http://dblp.uni-trier.de/db/journals/nar/nar34.html#WishartKGSHSCW06}.
+
+\bibitem{sider}
+Kuhn M, Letunic I, Jensen LJ, Bork P.
+\newblock The SIDER database of drugs and side effects.
+\newblock Nucleic Acids Research. 2015.
+\newblock Available from:
+  \url{http://nar.oxfordjournals.org/content/early/2015/10/19/nar.gkv1075.abstract}.
+
+\end{thebibliography}
