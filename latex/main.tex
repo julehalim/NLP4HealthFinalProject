@@ -1,0 +1,233 @@
+\documentclass[10.7pt,]{article}
+
+\usepackage[letterpaper, margin=2.54cm, top=2.54cm]{geometry}
+\usepackage[super,comma,sort&compress]{natbib}
+\usepackage{lmodern}
+\usepackage{authblk} % To add affiliations to authors
+\usepackage{multicol}
+\usepackage{amssymb,amsmath}
+\usepackage{wrapfig}
+\usepackage{graphicx,grffile}
+\usepackage[labelfont=bf,labelsep=period]{caption}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+    \setmainfont[]{Times New Roman}
+    \setsansfont[]{Century Gothic}
+    \setmonofont[Mapping=tex-ansi]{Consolas}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+	\usepackage{microtype}
+	\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{refs.bib} 
+\setlength\bibitemsep{2\itemsep}
+
+\usepackage{lipsum} % for dummy text only REMOVE
+
+\newtheorem{exm}{Example}
+
+
+%==============================
+% Customization to make the output PDF 
+% look similar to the MS Word version
+%==============================
+% To prevent hyphenation
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% To set the sections font size
+\usepackage{sectsty}
+\allsectionsfont{\fontsize{10}{10}\selectfont}
+%\sectionfont{\fontsize{10}{10}\selectfont}
+\subsectionfont{\itshape\bfseries\fontsize{10}{10}\selectfont}
+\subsubsectionfont{\normalfont\itshape}
+
+% No new line after subsubsection
+\makeatletter
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+	{-3.25ex\@plus -1ex \@minus -.2ex}%
+    {-1.5ex \@plus -.2ex}% Formerly 1.5ex \@plus .2ex
+    {\normalfont\itshape}}
+\makeatother
+
+\makeatletter % Reference list option change
+\renewcommand\@biblabel[1]{#1.} % from [1] to 1
+\makeatother %
+
+% To set the doc title font
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE}{\bfseries\fontsize{15}{16}\selectfont}{}{}
+\makeatother
+
+% No page numbering
+\pagenumbering{gobble}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+%==============================
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle={NLP4Health_Assignment3_Halim},
+}
+\urlstyle{same}  % don't use monospace font for urls
+%==============================
+
+% reduce space between title and begining of page
+\title{\vspace{-2em} Evaluating Drug Efficacy Through Patient Sentiment}
+\author[ ]{\bf\fontsize{13}{14}\selectfont Jule Valendo Halim - 1425567\vspace{1em}}
+\date{} % add no date (by default date is added)
+
+%==============================
+\begin{document}
+
+\maketitle
+\vspace{-4em} %separation between the affiliations and abstract
+%==============================
+
+\begin{multicols}{2}
+
+%==============================
+\section{Abstract}\label{abstract}
+%==============================
+
+\emph{Obtain some sort of machine learning using just the adverse drug reactions based on the medicine, and then compare it with the machine learning using the text data somehow.}
+
+
+
+
+%==============================
+\section{Introduction}\label{introduction}
+%==============================
+Use some citation here such as DrugBank (\cite{knuth:1984}), or SIDER (\cite{latex2e}). 
+
+%==============================
+\section{Background}\label{background}
+%==============================
+
+test
+
+%==============================
+\section{Methods}\label{methods}
+%==============================
+
+test
+
+%==============================
+\subsection{Data sources}\label{data-sources}
+%==============================
+
+test
+
+%==============================
+\subsection{Measures}\label{measures}
+%==============================
+
+%==============================
+\subsubsection{A first metric.}\label{metric-1}
+%==============================
+
+You can use all the cool math power of \LaTeX{} $A$ is defined as follows:
+
+
+%==============================
+\subsubsection{A second metric.}\label{metric-2}
+%==============================
+
+test
+
+
+\begin{exm}
+
+This is an example 
+
+\end{exm}
+
+
+%==============================
+\subsection{Evaluation}\label{evaluation}
+%==============================
+
+test
+
+%==============================
+\section{Results}\label{results}
+%==============================
+
+test
+
+%==============================
+\section{Discussion}\label{discussion}
+%==============================
+
+test
+
+%==============================
+\section{Conclusion}\label{conclusion}
+%==============================
+
+test
+
+\end{multicols}
+
+%==============================
+\section{Acknowledgements}\label{acknowledgements}
+%==============================
+Remember to acknowledge your funding institution\ldots
+
+
+%==============================
+\section{Bibliography}\label{bibliography}
+\printbibliography[heading=none]
+%==============================
+
+%==============================
+\section{Appendix}\label{appendix}
+%==============================
+test
+
+
+
+
+
+\end{document}
+
+
