@@ -320,21 +320,11 @@ MCC is used to measure the quality of binary classifications\cite{mcc}. Similar 
 \subsection{Friedman's Test of Significance}
 In order to investigate whether the predictions are significantly different from each other, Friedman's test will be performed on both tasks. Friedman's test is a hypothesis testing method, where the null hypothesis is that there is no significant difference between two samples of predictions\cite{HOFFMAN2015421}. Meanwhile, the alternative hypothesis is that a significant difference does exist. This test returns a probability(p)-value, which indicates how likely is it to get result predictions if the compared samples have no significant differences. A cutoff point ($\alpha$ value) of 0.05 will be used, meaning that if the p-value is <0.05, the null hypothesis will be rejected.
 
-\textbf{Friedman's Test:}
-
-\begin{equation}
-  T = \frac{12 \sum S_{ij}^2}{jk(j+1)} - 3k(j+1)
-\end{equation}
-
-where:
-\begin{align*}
-T & = \text{test statistic} \\
-\sum S_{ij}^2 & = \text{sum of the squared sums of ranks for each prediction set} \\
-j & = \text{number of prediction sets} \\
-k & = \text{number of instances}
-\end{align*}
-
-
+\begin{itemize}
+  \item \textbf{Null Hypothesis (\(H_0\))}: \(H_0: \text{MSE}_1 = \text{MSE}_2\)
+  \item \textbf{Alternative Hypothesis (\(H_1\))}: \(H_1: \text{MSE}_1 \neq \text{MSE}_2\)
+  \item \( \alpha = 0.05 \)
+\end{itemize}
 %==============================
 \section{Results}\label{results}
 %==============================
@@ -395,20 +385,6 @@ k & = \text{number of instances}
     $}
     \end{equation}
 
-\[
-\text{HL} = \frac{1}{N \times L} \sum_{l=1}^L \sum_{i=1}^N (Y_{i,l} \neq X_{i,l})
-\]
-
-\begin{flalign*}
-\text{where:} \\
-N & : \text{Number of samples} \\
-L & : \text{Number of labels} \\
-Y_{i,l} & : \text{True label for } i\text{th sample and } \\ 
-& l\text{th label} \\
-hat{y}_{ij} & : \text{Predicted label for } i\text{th sample and }\\
-& l\text{th label} \\
-(Y_{i,l} \neq hat{y}_{ij}) & : \text {1} \text{ if } y_{ij} \neq \hat{y}_{ij} \text{ and } 0 \text{ otherwise}
-\end{flalign*}
 
 \textbf{Hamming Loss:}
 
@@ -446,5 +422,18 @@ hat{y}_{ij} & : \text{Predicted label for } i\text{th sample and }\\
 \end{equation}
 
 
+\textbf{Friedman's Test:}
+
+\begin{equation}
+  T = \frac{12 \sum S_{ij}^2}{jk(j+1)} - 3k(j+1)
+\end{equation}
+
+where:
+\begin{align*}
+T & = \text{test statistic} \\
+\sum S_{ij}^2 & = \text{sum of the squared sums of ranks for each prediction set} \\
+j & = \text{number of prediction sets} \\
+k & = \text{number of instances}
+\end{align*}
 
 \end{document}
