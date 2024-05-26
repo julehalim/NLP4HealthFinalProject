@@ -120,3 +120,138 @@
   publisher = {WHO Collaborating Centre for Drug Statistics Methodology}
 }
 
+@inproceedings{statsPaper,
+    title = "The Hitchhiker{'}s Guide to Testing Statistical Significance in Natural Language Processing",
+    author = "Dror, Rotem  and
+      Baumer, Gili  and
+      Shlomov, Segev  and
+      Reichart, Roi",
+    editor = "Gurevych, Iryna  and
+      Miyao, Yusuke",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-1128",
+    doi = "10.18653/v1/P18-1128",
+    pages = "1383--1392",
+    abstract = "Statistical significance testing is a standard statistical tool designed to ensure that experimental results are not coincidental. In this opinion/ theoretical paper we discuss the role of statistical significance testing in Natural Language Processing (NLP) research. We establish the fundamental concepts of significance testing and discuss the specific aspects of NLP tasks, experimental setups and evaluation measures that affect the choice of significance tests in NLP research. Based on this discussion we propose a simple practical protocol for statistical significance test selection in NLP setups and accompany this protocol with a brief survey of the most relevant tests. We then survey recent empirical papers published in ACL and TACL during 2017 and show that while our community assigns great value to experimental results, statistical significance testing is often ignored or misused. We conclude with a brief discussion of open issues that should be properly addressed so that this important tool can be applied. in NLP research in a statistically sound manner.",
+}
+
+@Inbook{Varoquaux2023,
+author="Varoquaux, Gael
+and Colliot, Olivier",
+editor="Colliot, Olivier",
+title="Evaluating Machine Learning Models and Their Diagnostic Value",
+bookTitle="Machine Learning for Brain Disorders",
+year="2023",
+publisher="Springer US",
+address="New York, NY",
+pages="601--630",
+abstract="This chapter describes model validation, a crucial part of machine learning whether it is to select the best model or to assess performance of a given model. We start by detailing the main performance metrics for different tasks (classification, regression), and how they may be interpreted, including in the face of class imbalance, varying prevalence, or asymmetric cost--benefit trade-offs. We then explain how to estimate these metrics in an unbiased manner using training, validation, and test sets. We describe cross-validation procedures---to use a larger part of the data for both training and testing---and the dangers of data leakage---optimism bias due to training data contaminating the test set. Finally, we discuss how to obtain confidence intervals of performance metrics, distinguishing two situations: internal validation or evaluation of learning algorithms and external validation or evaluation of resulting prediction models.",
+isbn="978-1-0716-3195-9",
+doi="10.1007/978-1-0716-3195-9_20",
+url="https://doi.org/10.1007/978-1-0716-3195-9_20"
+}
+
+@article{statsBased,
+  author  = "Rainio, Oona
+  and Tauho, Jarmo
+  and Klén, Riku",
+  title   = "Evaluation metrics and statistical tests for machine learning",
+  journal = "Sci Rep",
+  year    = 2024,
+  volume  = "14",
+  number  = "6086",
+  doi   = "https://doi.org/10.1038/s41598-024-56706-x"
+}
+
+@article{psyTAR1,
+author = {Zolnoori, Maryam and Fung, Kin and Patrick, Timothy and Fontelo, Paul and Kharrazi, Hadi and Faiola, Anthony and Wu, Shirley and Eldredge, Christina and Luo, Jake and Conway, Mike and Zhu, Jiaxi and Park, Soo and Xu, Kelly and Moayyed, Hamideh},
+year = {2019},
+month = {03},
+pages = {103838},
+title = {The PsyTAR Dataset: From Patients Generated Narratives to a Corpus of Adverse Drug Events and Effectiveness of Psychiatric Medications},
+volume = {24},
+journal = {Data in Brief},
+doi = {10.1016/j.dib.2019.103838}
+}
+
+@article{psyTar2,
+title = {A systematic approach for developing a corpus of patient reported adverse drug events: A case study for SSRI and SNRI medications},
+journal = {Journal of Biomedical Informatics},
+volume = {90},
+pages = {103091},
+year = {2019},
+issn = {1532-0464},
+doi = {https://doi.org/10.1016/j.jbi.2018.12.005},
+url = {https://www.sciencedirect.com/science/article/pii/S1532046419300012},
+author = {Maryam Zolnoori and Kin Wah Fung and Timothy B. Patrick and Paul Fontelo and Hadi Kharrazi and Anthony Faiola and Yi Shuan Shirley Wu and Christina E. Eldredge and Jake Luo and Mike Conway and Jiaxi Zhu and Soo Kyung Park and Kelly Xu and Hamideh Moayyed and Somaieh Goudarzvand},
+keywords = {Annotated corpus, Adverse drug events, Drug effectiveness, Online healthcare forums, Patients narratives, Psychiatric medications, SSRIs, SNRIs, Drug safety, Social media, Information extraction, Semantic mapping, SNOMED CT, UMLS, Text mining, Machine learning},
+abstract = {“Psychiatric Treatment Adverse Reactions” (PsyTAR) corpus is an annotated corpus that has been developed using patients narrative data for psychiatric medications, particularly SSRIs (Selective Serotonin Reuptake Inhibitor) and SNRIs (Serotonin Norepinephrine Reuptake Inhibitor) medications. This corpus consists of three main components: sentence classification, entity identification, and entity normalization. We split the review posts into sentences and labeled them for presence of adverse drug reactions (ADRs) (2168 sentences), withdrawal symptoms (WDs) (438 sentences), sign/symptoms/illness (SSIs) (789 sentences), drug indications (517), drug effectiveness (EF) (1087 sentences), and drug infectiveness (INF) (337 sentences). In the entity identification phase, we identified and extracted ADRs (4813 mentions), WDs (590 mentions), SSIs (1219 mentions), and DIs (792). In the entity normalization phase, we mapped the identified entities to the corresponding concepts in both UMLS (918 unique concepts) and SNOMED CT (755 unique concepts). Four annotators double coded the sentences and the span of identified entities by strictly following guidelines rules developed for this study. We used the PsyTAR sentence classification component to automatically train a range of supervised machine learning classifiers to identifying text segments with the mentions of ADRs, WDs, DIs, SSIs, EF, and INF. SVMs classifiers had the highest performance with F-Score 0.90. We also measured performance of the cTAKES (clinical Text Analysis and Knowledge Extraction System) in identifying patients’ expressions of ADRs and WDs with and without adding PsyTAR dictionary to the core dictionary of cTAKES. Augmenting cTAKES dictionary with PsyTAR improved the F-score cTAKES by 25%. The findings imply that PsyTAR has significant implications for text mining algorithms aimed to identify information about adverse drug events and drug effectiveness from patients’ narratives data, by linking the patients’ expressions of adverse drug events to medical standard vocabularies. The corpus is publicly available at Zolnoori et al. [30].}
+}
+
+
+@article{10.1197/jamia.M3028,
+    author = {Wang, Xiaoyan and Hripcsak, George and Markatou, Marianthi and Friedman, Carol},
+    title = "{Active Computerized Pharmacovigilance Using Natural Language Processing, Statistics, and Electronic Health Records: A Feasibility Study}",
+    journal = {Journal of the American Medical Informatics Association},
+    volume = {16},
+    number = {3},
+    pages = {328-337},
+    year = {2009},
+    month = {05},
+    abstract = "{Objective: It is vital to detect the full safety profile of a drug throughout its market life. Current pharmacovigilance systems still have substantial limitations, however. The objective of our work is to demonstrate the feasibility of using natural language processing (NLP), the comprehensive Electronic Health Record (EHR), and association statistics for pharmacovigilance purposes.Design: Narrative discharge summaries were collected from the Clinical Information System at New York Presbyterian Hospital (NYPH). MedLEE, an NLP system, was applied to the collection to identify medication events and entities which could be potential adverse drug events (ADEs). Co-occurrence statistics with adjusted volume tests were used to detect associations between the two types of entities, to calculate the strengths of the associations, and to determine their cutoff thresholds. Seven drugs/drug classes (ibuprofen, morphine, warfarin, bupropion, paroxetine, rosiglitazone, ACE inhibitors) with known ADEs were selected to evaluate the system.Results: One hundred thirty-two potential ADEs were found to be associated with the 7 drugs. Overall recall and precision were 0.75 and 0.31 for known ADEs respectively. Importantly, qualitative evaluation using historic roll back design suggested that novel ADEs could be detected using our system.Conclusions: This study provides a framework for the development of active, high-throughput and prospective systems which could potentially unveil drug safety profiles throughout their entire market life. Our results demonstrate that the framework is feasible although there are some challenging issues. To the best of our knowledge, this is the first study using comprehensive unstructured data from the EHR for pharmacovigilance.}",
+    issn = {1067-5027},
+    doi = {10.1197/jamia.M3028},
+    url = {https://doi.org/10.1197/jamia.M3028},
+    eprint = {https://academic.oup.com/jamia/article-pdf/16/3/328/2546772/16-3-328.pdf},
+}
+
+@article{mcc,
+    doi = {https://doi.org/10.1186/s13040-021-00244-z},
+    author = {Chicco, Davide AND Tötsch, Niklas AND Jurman, Giuseppe},
+    journal = {BioData Mining},
+    title = {The Matthews correlation coefficient (MCC) is more reliable than balanced accuracy, bookmaker informedness, and markedness in two-class confusion matrix evaluation},
+    year = {2021},
+    volume = {13},
+    url = {https://doi.org/10.1371/journal.pone.0177678},
+}
+
+@article{mcc2,
+    doi = {10.1371/journal.pone.0177678},
+    author = {Boughorbel, Sabri AND Jarray, Fethi AND El-Anbari, Mohammed},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {Optimal classifier for imbalanced data using Matthews Correlation Coefficient metric},
+    year = {2017},
+    month = {06},
+    volume = {12},
+    url = {https://doi.org/10.1371/journal.pone.0177678},
+    pages = {1-17},
+    abstract = {Data imbalance is frequently encountered in biomedical applications. Resampling techniques can be used in binary classification to tackle this issue. However such solutions are not desired when the number of samples in the small class is limited. Moreover the use of inadequate performance metrics, such as accuracy, lead to poor generalization results because the classifiers tend to predict the largest size class. One of the good approaches to deal with this issue is to optimize performance metrics that are designed to handle data imbalance. Matthews Correlation Coefficient (MCC) is widely used in Bioinformatics as a performance metric. We are interested in developing a new classifier based on the MCC metric to handle imbalanced data. We derive an optimal Bayes classifier for the MCC metric using an approach based on Frechet derivative. We show that the proposed algorithm has the nice theoretical property of consistency. Using simulated data, we verify the correctness of our optimality result by searching in the space of all possible binary classifiers. The proposed classifier is evaluated on 64 datasets from a wide range data imbalance. We compare both classification performance and CPU efficiency for three classifiers: 1) the proposed algorithm (MCC-classifier), the Bayes classifier with a default threshold (MCC-base) and imbalanced SVM (SVM-imba). The experimental evaluation shows that MCC-classifier has a close performance to SVM-imba while being simpler and more efficient.},
+    number = {6},
+
+}
+
+@article{cohen,
+    author = {McHugh, Mary L.},
+    journal = {Biochem Med (Zagreb)},
+    title = {Interrater reliability: the kappa statistic},
+    year = {2012},
+    volume = {22},
+    url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3900052/#:~:text=Cohen%20suggested%20the%20Kappa%20result,1.00%20as%20almost%20perfect%20agreement.},
+}
+
+@article{hammingloss,
+    author = {Jorge Díez AND Oscar Luaces AND Juan José del Coz AND Antonio Bahamonde },
+    journal = {Regular Paper},
+    title = {Optimizing different loss functions in multilabel classifications},
+    year = {2015},
+    volume = {3},
+    pages           = {107-118},
+    doi             = {https://doi.org/10.1007/s13748-014-0060-7},
+    url = {https://link.springer.com/article/10.1007/s13748-014-0060-7},
+}
+

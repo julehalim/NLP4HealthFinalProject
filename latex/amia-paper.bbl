@@ -1,18 +1,62 @@
 \begin{thebibliography}{1}
 
-\bibitem{drugbank}
-Wishart DS, Knox C, Guo A, Shrivastava S, Hassanali M, Stothard P, et~al.
-\newblock DrugBank: a comprehensive resource for in silico drug discovery and
-  exploration.
-\newblock Nucleic Acids Research. 2006;34(Database-Issue):668-72.
-\newblock Available from:
-  \url{http://dblp.uni-trier.de/db/journals/nar/nar34.html#WishartKGSHSCW06}.
+\bibitem{statsPaper}
+Dror R, Baumer G, Shlomov S, Reichart R.
+\newblock The Hitchhiker{'}s Guide to Testing Statistical Significance in
+  Natural Language Processing.
+\newblock In: Gurevych I, Miyao Y, editors. Proceedings of the 56th Annual
+  Meeting of the Association for Computational Linguistics (Volume 1: Long
+  Papers). Melbourne, Australia: Association for Computational Linguistics;
+  2018. p. 1383-92.
+\newblock Available from: \url{https://aclanthology.org/P18-1128}.
 
-\bibitem{sider}
-Kuhn M, Letunic I, Jensen LJ, Bork P.
-\newblock The SIDER database of drugs and side effects.
-\newblock Nucleic Acids Research. 2015.
+\bibitem{10.1197/jamia.M3028}
+Wang X, Hripcsak G, Markatou M, Friedman C.
+\newblock {Active Computerized Pharmacovigilance Using Natural Language
+  Processing, Statistics, and Electronic Health Records: A Feasibility Study}.
+\newblock Journal of the American Medical Informatics Association. 2009
+  05;16(3):328-37.
+\newblock Available from: \url{https://doi.org/10.1197/jamia.M3028}.
+
+\bibitem{statsBased}
+Rainio O, Tauho J, Klén R.
+\newblock Evaluation metrics and statistical tests for machine learning.
+\newblock Sci Rep. 2024;14(6086).
+
+\bibitem{psyTAR1}
+Zolnoori M, Fung K, Patrick T, Fontelo P, Kharrazi H, Faiola A, et~al.
+\newblock The PsyTAR Dataset: From Patients Generated Narratives to a Corpus of
+  Adverse Drug Events and Effectiveness of Psychiatric Medications.
+\newblock Data in Brief. 2019 03;24:103838.
+
+\bibitem{psyTar2}
+Zolnoori M, Fung KW, Patrick TB, Fontelo P, Kharrazi H, Faiola A, et~al.
+\newblock A systematic approach for developing a corpus of patient reported
+  adverse drug events: A case study for SSRI and SNRI medications.
+\newblock Journal of Biomedical Informatics. 2019;90:103091.
 \newblock Available from:
-  \url{http://nar.oxfordjournals.org/content/early/2015/10/19/nar.gkv1075.abstract}.
+  \url{https://www.sciencedirect.com/science/article/pii/S1532046419300012}.
+
+\bibitem{hammingloss}
+Díez J, Luaces O, del Coz JJ, Bahamonde A.
+\newblock Optimizing different loss functions in multilabel classifications.
+\newblock Regular Paper. 2015;3:107-18.
+\newblock Available from:
+  \url{https://link.springer.com/article/10.1007/s13748-014-0060-7}.
+
+\bibitem{cohen}
+McHugh ML.
+\newblock Interrater reliability: the kappa statistic.
+\newblock Biochem Med (Zagreb). 2012;22.
+\newblock Available from:
+  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3900052/#:~:text=Cohen%20suggested%20the%20Kappa%20result,1.00%20as%20almost%20perfect%20agreement.}
+
+\bibitem{mcc}
+Chicco D, Tötsch N, Jurman G.
+\newblock The Matthews correlation coefficient (MCC) is more reliable than
+  balanced accuracy, bookmaker informedness, and markedness in two-class
+  confusion matrix evaluation.
+\newblock BioData Mining. 2021;13.
+\newblock Available from: \url{https://doi.org/10.1371/journal.pone.0177678}.
 
 \end{thebibliography}
