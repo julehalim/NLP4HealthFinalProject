@@ -222,42 +222,10 @@ The transformer model uses a pre-trained BERT model, which was trained on a down
 \end{table}
 
 \subsubsection{Statistical Tests}
-Multi-class classification will be tested using macro and micro averaged precision, recall, and F1-scores. Accuracy will also be reported.
 
-\textbf{Accuracy, Precision, Recall, and F1-Scores:}
-\begin{equation}
-  Accuracy = \frac{TP+TN}{TP+TN+FP+FN}
-\end{equation}
+Multi-label classification will be tested using macro and micro averaged precision, recall, and F1-scores. Accuracy will also be reported. In addition, follwing figure \ref{fig:statistical test workflow}, the Hamming Loss (HL) of the predictions are also calculated. HL measures the fraction of labels that are incorrectly predicted, on average, across all samples and is used to evaluate multi-label classification tasks\cite{hammingloss}.
 
-\begin{equation}
-  Precision = \frac{TP}{TP+FP}
-\end{equation}
-
-\begin{equation}
-  Recall = \frac{TP}{TP+FN}
-\end{equation}
-
-\begin{equation}
-  F1 = \frac{2*Precision*Recall}{Precision+Recall} = \frac{2*TP}{2*TP+FP+FN}
-\end{equation}
-
-In addition, follwing figure \ref{fig:statistical test workflow}, the Hamming Loss (HL) of the predictions are also calculated. HL measures the fraction of labels that are incorrectly predicted, on average, across all samples and is used to evaluate multi-label classification tasks\cite{hammingloss}.
-
-\[
-\text{HL} = \frac{1}{N \times L} \sum_{l=1}^L \sum_{i=1}^N (Y_{i,l} \neq X_{i,l})
-\]
-
-\begin{flalign*}
-\text{where:} \\
-N & : \text{Number of samples} \\
-L & : \text{Number of labels} \\
-Y_{i,l} & : \text{True label for } i\text{th sample and } \\ 
-& l\text{th label} \\
-hat{y}_{ij} & : \text{Predicted label for } i\text{th sample and }\\
-& l\text{th label} \\
-(Y_{i,l} \neq hat{y}_{ij}) & : \text {1} \text{ if } y_{ij} \neq \hat{y}_{ij} \text{ and } 0 \text{ otherwise}
-\end{flalign*}
-
+Statistical test equations are found in Appendix A.
 \subsection{Multi-Class Classification}
 Multiclass classification aims to take in text and predict the drug that is being reviewed. There are four classes of drugs to predict. Lexapro, cymbalta, effexorxr, and zoloft.
 
@@ -303,9 +271,89 @@ The transformer model is identical to the multi-label transformer, except it was
 \subsubsection{Statistical Tests}
 Multi-class classification will be tested using macro and micro averaged precision, recall, and F1-scores as described previously. Accuracy will also be reported.
 
-Additionally, following figure \ref{fig:statistical test workflow}, Cohen's Kappa (Cohen's K) and Matthews Correlation Coefficient (MCC) will be used. 
+Additionally, following figure \ref{fig:statistical test workflow}, Cohen's Kappa (Cohen's K) and Matthews Correlation Coefficient (MCC) will be used. Cohen's K returns a value between 1 and -1, where 1 means a perfect agreement, 0 means no agreement above chance, and -1 indicating agreement less than chance. Cutoff points for Cohen's K is given in table \ref{tab:kappaInterpretation}, which is based on McHugh's research\cite{cohen}.
 
-Cohen's K is calculated using the following formula: 
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|p{4cm}|p{3cm}|}
+    \hline
+    \textbf{Absolute Cohen's Kappa Range} & \textbf{Interpretation} \\
+    \hline
+    $|\kappa| \leq 0$ & No agreement \\
+    \hline
+    $0.01 \leq |\kappa| \leq 0.20$ & None to slight agreement \\
+    \hline
+    $0.21 \leq |\kappa| \leq 0.40$ & Fair agreement \\
+    \hline
+    $0.41 \leq |\kappa| \leq 0.60$ & Moderate agreement \\
+    \hline
+    $0.61 \leq |\kappa| \leq 0.80$ & Substantial agreement \\
+    \hline
+    $0.81 \leq |\kappa| \leq 1.00$ & Almost perfect agreement \\
+    \hline
+  \end{tabular}
+  \caption{Cohen's Kappa Cutoff Points}
+  \label{tab:kappaInterpretation}
+\end{table}
+
+MCC is used to measure the quality of binary classifications\cite{mcc}. Similar to Cohen's K, MCC returns a value betwen 1 and -1, where 1 means perfect predictions, 0 means a prediction that is no better than random, and -1 means total disagreement between predictions and observations. While the cutoff points of MCC are generally created using a receiver operating characteristic (ROC) curve, this report will follow a basic cutoff point described in table \ref{tab:mccInterpretation}.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|p{4cm}|p{3cm}|}
+    \hline
+    \textbf{Absolute MCC Values} & \textbf{Interpretation} \\
+    \hline
+    $0 \leq |\text{MCC}| \leq 0.1$ & Random Performance \\
+    \hline
+    $0.1 < |\text{MCC}| < 0.3$ & Weak Correlation \\
+    \hline
+    $0.3 \leq |\text{MCC}| < 0.5$ & Moderate Correlation \\
+    \hline
+    $|\text{MCC}| \geq 0.7$ & Strong Correlation \\
+    \hline
+  \end{tabular}
+  \caption{MCC Cutoff Points}
+  \label{tab:mccInterpretation}
+\end{table}
+
+\subsection{Friedman's Test of Significance}
+In order to investigate whether the predictions are significantly different from each other, Friedman's test will be performed on both tasks. Friedman's test is a hypothesis testing method, where the null hypothesis is that there is no significant difference between two samples of predictions\cite{HOFFMAN2015421}. Meanwhile, the alternative hypothesis is that a significant difference does exist. This test returns a probability(p)-value, which indicates how likely is it to get result predictions if the compared samples have no significant differences. A cutoff point ($\alpha$ value) of 0.05 will be used, meaning that if the p-value is <0.05, the null hypothesis will be rejected.
+
+\textbf{Friedman's Test:}
+
+\begin{equation}
+  T = \frac{12 \sum S_{ij}^2}{jk(j+1)} - 3k(j+1)
+\end{equation}
+
+where:
+\begin{align*}
+T & = \text{test statistic} \\
+\sum S_{ij}^2 & = \text{sum of the squared sums of ranks for each prediction set} \\
+j & = \text{number of prediction sets} \\
+k & = \text{number of instances}
+\end{align*}
+
+
+%==============================
+\section{Results}\label{results}
+%==============================
+
+%==============================
+\section{Discussion and Conclusion}\label{discussion and conclusion}
+%==============================
+% future work could include additional statistical tests on features (e.g., chi squared tests of feature indpendence) Efficient and inefficient obviously have some feature dependence, but these are labels. nevertheless, these could be investigated
+
+%a challenge is that NLP tasks generally uses one singular text as the input (e.g.,just the review text). However, we still show how investigating feature engineering on the text could provide deeper insights on how the model performs and increases interpretability.
+%==============================
+\bibliographystyle{vancouver}
+\bibliography{literature}
+%==============================
+
+\section{Appendix}
+
+\subsection{Appendix A - Equations for Statistical Tests}
+
 
 \textbf{Cohen's K:}
 
@@ -340,95 +388,63 @@ Cohen's K is calculated using the following formula:
       \item $c$ = Number of times Annotator A said negative but Annotator B said positive
   \end{itemize}
 
-Cohen's K returns a value between 1 and -1, where 1 means a perfect agreement, 0 means no agreement above chance, and -1 indicating agreement less than chance. Cutoff points for Cohen's K is given in table \ref{tab:kappaInterpretation}, which is based on McHugh's research\cite{cohen}.
+  \textbf{Matthews Correlation Coefficient:}
+  \begin{equation}
+    \resizebox{0.9\hsize}{!}{$
+    \text{MCC} = \frac{TP \cdot TN - FP \cdot FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}
+    $}
+    \end{equation}
 
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|p{4cm}|p{3cm}|}
-    \hline
-    \textbf{Absolute Cohen's Kappa Range} & \textbf{Interpretation} \\
-    \hline
-    $|\kappa| \leq 0$ & No agreement \\
-    \hline
-    $0.01 \leq |\kappa| \leq 0.20$ & None to slight agreement \\
-    \hline
-    $0.21 \leq |\kappa| \leq 0.40$ & Fair agreement \\
-    \hline
-    $0.41 \leq |\kappa| \leq 0.60$ & Moderate agreement \\
-    \hline
-    $0.61 \leq |\kappa| \leq 0.80$ & Substantial agreement \\
-    \hline
-    $0.81 \leq |\kappa| \leq 1.00$ & Almost perfect agreement \\
-    \hline
-  \end{tabular}
-  \caption{Cohen's Kappa Cutoff Points}
-  \label{tab:kappaInterpretation}
-\end{table}
+\[
+\text{HL} = \frac{1}{N \times L} \sum_{l=1}^L \sum_{i=1}^N (Y_{i,l} \neq X_{i,l})
+\]
+
+\begin{flalign*}
+\text{where:} \\
+N & : \text{Number of samples} \\
+L & : \text{Number of labels} \\
+Y_{i,l} & : \text{True label for } i\text{th sample and } \\ 
+& l\text{th label} \\
+hat{y}_{ij} & : \text{Predicted label for } i\text{th sample and }\\
+& l\text{th label} \\
+(Y_{i,l} \neq hat{y}_{ij}) & : \text {1} \text{ if } y_{ij} \neq \hat{y}_{ij} \text{ and } 0 \text{ otherwise}
+\end{flalign*}
+
+\textbf{Hamming Loss:}
+
+\[
+\text{HL} = \frac{1}{N \times L} \sum_{l=1}^L \sum_{i=1}^N (Y_{i,l} \neq X_{i,l})
+\]
+
+\begin{flalign*}
+\text{where:} \\
+N & : \text{Number of samples} \\
+L & : \text{Number of labels} \\
+Y_{i,l} & : \text{True label for } i\text{th sample and } \\ 
+& l\text{th label} \\
+hat{y}_{ij} & : \text{Predicted label for } i\text{th sample and }\\
+& l\text{th label} \\
+(Y_{i,l} \neq hat{y}_{ij}) & : \text {1} \text{ if } y_{ij} \neq \hat{y}_{ij} \text{ and } 0 \text{ otherwise}
+\end{flalign*}
 
 
-MCC is used to measure the quality of binary classifications\cite{mcc}. The formula for MCC is given:
-
-\textbf{MCC:}
+\textbf{Accuracy, Precision, Recall, and F1-Scores:}
 \begin{equation}
-  \resizebox{0.9\hsize}{!}{$
-  \text{MCC} = \frac{TP \cdot TN - FP \cdot FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}
-  $}
-  \end{equation}
-
-Similar to Cohen's K, MCC returns a value betwen 1 and -1, where 1 means perfect predictions, 0 means a prediction that is no better than random, and -1 means total disagreement between predictions and observations. While the cutoff points of MCC are generally created using a receiver operating characteristic (ROC) curve, this report will follow a basic cutoff point described in table \ref{tab:mccInterpretation}.
-
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|p{4cm}|p{3cm}|}
-    \hline
-    \textbf{Absolute MCC Values} & \textbf{Interpretation} \\
-    \hline
-    $0 \leq |\text{MCC}| \leq 0.1$ & Random Performance \\
-    \hline
-    $0.1 < |\text{MCC}| < 0.3$ & Weak Correlation \\
-    \hline
-    $0.3 \leq |\text{MCC}| < 0.5$ & Moderate Correlation \\
-    \hline
-    $|\text{MCC}| \geq 0.7$ & Strong Correlation \\
-    \hline
-  \end{tabular}
-  \caption{MCC Cutoff Points}
-  \label{tab:mccInterpretation}
-\end{table}
-
-\subsection{Friedman's Test of Significance}
-In order to investigate whether the predictions are significantly different from each other, Friedman's test will be performed on both tasks. Friedman's test is a hypothesis testing method, where the null hypothesis is that there is no significant difference between two samples of predictions. Meanwhile, the alternative hypothesis is that a significant difference does exist. This test returns a probability(p)-value, which indicates how likely is it to get result predictions if the compared samples have no significant differences. A cutoff point ($\alpha$ value) of 5\% will be used, meaning that if the p-value is <5\%, the null hypothesis will be rejected.
-
-\textbf{Friedman's Test:}
-
-\begin{equation}
-  T = \frac{12 \sum S_{ij}^2}{jk(j+1)} - 3k(j+1)
+  Accuracy = \frac{TP+TN}{TP+TN+FP+FN}
 \end{equation}
 
-where:
-\begin{align*}
-T & = \text{test statistic} \\
-\sum S_{ij}^2 & = \text{sum of the squared sums of ranks for each prediction set} \\
-j & = \text{number of prediction sets} \\
-k & = \text{number of instances}
-\end{align*}
+\begin{equation}
+  Precision = \frac{TP}{TP+FP}
+\end{equation}
+
+\begin{equation}
+  Recall = \frac{TP}{TP+FN}
+\end{equation}
+
+\begin{equation}
+  F1 = \frac{2*Precision*Recall}{Precision+Recall} = \frac{2*TP}{2*TP+FP+FN}
+\end{equation}
 
 
-%==============================
-\section{Results}\label{results}
-%==============================
-
-%==============================
-\section{Discussion and Conclusion}\label{discussion and conclusion}
-%==============================
-% future work could include additional statistical tests on features (e.g., chi squared tests of feature indpendence) Efficient and inefficient obviously have some feature dependence, but these are labels. nevertheless, these could be investigated
-
-%a challenge is that NLP tasks generally uses one singular text as the input (e.g.,just the review text). However, we still show how investigating feature engineering on the text could provide deeper insights on how the model performs and increases interpretability.
-%==============================
-\bibliographystyle{vancouver}
-\bibliography{literature}
-%==============================
-
-\section{Appendix}
 
 \end{document}

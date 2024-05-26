@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  27 MAY 2024 03:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  27 MAY 2024 03:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,7 +557,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 143.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 143.
-<images/41598_2024_56706_Fig3_HTML.png, id=104, 1777.64125pt x 1683.28876pt>
+<images/41598_2024_56706_Fig3_HTML.png, id=108, 1777.64125pt x 1683.28876pt>
 File: images/41598_2024_56706_Fig3_HTML.png Graphic file (type png)
 <use images/41598_2024_56706_Fig3_HTML.png>
 Package pdftex.def Info: images/41598_2024_56706_Fig3_HTML.png  used on input line 149.
@@ -632,76 +632,72 @@ Underfull \hbox (badness 3260) in paragraph at lines 199--200
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.259 \end{flalign*}
-                     [2{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-Underfull \hbox (badness 1072) in paragraph at lines 270--271
+Underfull \hbox (badness 1072) in paragraph at lines 238--239
 \T1/lmr/m/n/10 (+20) to-ken was placed in front of it. If the class
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 270--271
+Underfull \hbox (badness 1824) in paragraph at lines 238--239
 \T1/lmr/m/n/10 (+20) to as Task_2_Feature_2. Ref-er-ences to this
- []
-
-
-Underfull \hbox (badness 1533) in paragraph at lines 276--277
-\T1/lmr/m/n/10 (+20) in-put text. How-ever, in con-trast to us-ing a
- []
-
-
-Underfull \hbox (badness 5077) in paragraph at lines 304--305
-\T1/lmr/m/n/10 (+20) re-call, and F1-scores as de-scribed pre-vi-ously.
  []
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.333     \end{align}
-                      [3]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 337.
- (C:\Users\julev\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+l.239 
+       [2]
+Underfull \hbox (badness 1533) in paragraph at lines 244--245
+\T1/lmr/m/n/10 (+20) in-put text. How-ever, in con-trast to us-ing a
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 272--273
+\T1/lmr/m/n/10 (+20) re-call, and F1-scores as de-scribed pre-vi-ously.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 []\T1/lmr/bx/n/10 (+20) Absolute Co-hen's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 []\T1/lmr/m/n/10 (+20) None to slight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 []\T1/lmr/m/n/10 (+20) Moderate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 []\T1/lmr/m/n/10 (+20) Substantial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 []\T1/lmr/m/n/10 (+20) Almost per-fect
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 []\T1/lmr/m/n/10 (+20) Random
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 []\T1/lmr/m/n/10 (+20) Moderate
  []
 
 
-Overfull \hbox (60.40819pt too wide) detected at line 414
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.325 \begin{equation}
+                       [3{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+Overfull \hbox (60.40819pt too wide) detected at line 335
 []
  []
 
@@ -726,11 +722,6 @@ Underfull \hbox (badness 1590) in paragraph at lines 4--12
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.12 
-      [4{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 Underfull \hbox (badness 1117) in paragraph at lines 14--20
 \T1/lmr/m/n/10 (+20) Nat-u-ral Lan-guage Pro-cess-ing, Statis-tics, and
  []
@@ -789,27 +780,36 @@ Underfull \hbox (badness 5787) in paragraph at lines 55--61
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.434 \end{document}
-                     [5] (amia-paper.aux)
+l.381     \end{align}
+                      [4{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 385.
+ (C:\Users\julev\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.450 \end{document}
+                     [5{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] (amia-paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `amia-paper.out' has not changed.
-(rerunfilecheck)             Checksum: E1892B9CF9D77F43E3167E7E4F8BF40C;3033.
+(rerunfilecheck)             Checksum: 74ACD8F40F15F5B771A32828C8E58FF4;3328.
  ) 
 Here is how much of TeX's memory you used:
  15175 strings out of 474424
- 248488 string characters out of 5741739
- 1951496 words of memory out of 5000000
- 37087 multiletter control sequences out of 15000+600000
- 640997 words of font info for 157 fonts, out of 8000000 for 9000
+ 248535 string characters out of 5741739
+ 1950496 words of memory out of 5000000
+ 37091 multiletter control sequences out of 15000+600000
+ 640748 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,14n,93p,1059b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,93p,1059b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
-Output written on amia-paper.pdf (5 pages, 529389 bytes).
+Output written on amia-paper.pdf (5 pages, 533342 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 47302 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 47310 words of extra memory for PDF output out of 51595 (max. 10000000)
 
