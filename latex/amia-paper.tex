@@ -318,7 +318,7 @@ MCC is used to measure the quality of binary classifications\cite{mcc}. Similar 
 \end{table}
 
 \subsection{Friedman's Test of Significance}
-In order to investigate whether the predictions are significantly different from each other, Friedman's test will be performed on both tasks. Friedman's test is a hypothesis testing method, where the null hypothesis is that there is no significant difference between two samples of predictions\cite{HOFFMAN2015421}. Meanwhile, the alternative hypothesis is that a significant difference does exist. This test returns a probability(p)-value, which indicates how likely is it to get result predictions if the compared samples have no significant differences. A cutoff point ($\alpha$ value) of 0.05 will be used, meaning that if the p-value is <0.05, the null hypothesis will be rejected.
+In order to investigate whether the predictions are significantly different from each other, Friedman's test will be performed on both tasks. Friedman's test is a hypothesis testing method, where the null hypothesis is that there is no significant difference between two samples of predictions\cite{HOFFMAN2015421}. Meanwhile, the alternative hypothesis is that a significant difference does exist. This test returns a probability(p)-value, which indicates how likely is it to get result predictions if the compared samples have no significant differences. A cutoff point ($\alpha$ value) of 0.05 will be used, meaning that if the p-value is <0.05, the null hypothesis will be rejected. This test was found to not be suitable for the multi-class classification task, due to the output as text. Additional discussion on the impact of this will be discussed in Discussion and Conclusion.
 
 \begin{itemize}
   \item \textbf{Null Hypothesis (\(H_0\))}: \(H_0: \text{MSE}_1 = \text{MSE}_2\)
@@ -335,6 +335,8 @@ In order to investigate whether the predictions are significantly different from
 % future work could include additional statistical tests on features (e.g., chi squared tests of feature indpendence) Efficient and inefficient obviously have some feature dependence, but these are labels. nevertheless, these could be investigated
 
 %a challenge is that NLP tasks generally uses one singular text as the input (e.g.,just the review text). However, we still show how investigating feature engineering on the text could provide deeper insights on how the model performs and increases interpretability.
+
+% could expand into studying the use of this on different datasets because it would provide more statistical power (that the models can generalize outside of datasets)
 %==============================
 \bibliographystyle{vancouver}
 \bibliography{literature}

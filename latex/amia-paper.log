@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  27 MAY 2024 03:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  28 MAY 2024 02:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -691,15 +691,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--312
 []\T1/lmr/m/n/10 (+20) Moderate
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 324.
-(C:\Users\julev\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.325   \item \textbf
-                     {Alternative Hypothesis (\(H_1\))}: \(H_1: \text{MSE}_1... [3{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] (amia-paper.bbl
+l.322 
+       [3{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 324.
+ (C:\Users\julev\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (amia-paper.bbl
 Underfull \hbox (badness 4634) in paragraph at lines 4--12
 []\T1/lmr/m/n/10 (+20) Dror R, Baumer G, Shlo-mov S, Re-ichart
  []
@@ -779,8 +780,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.378       \item $
-                   c$ = Number of times Annotator A said negative but Annota... [4{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-Overfull \hbox (60.40819pt too wide) detected at line 437
+                   d$ = Number of times both annotators agreed the sample wa... [4{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+Overfull \hbox (60.40819pt too wide) detected at line 439
 []
  []
 
@@ -788,10 +789,8 @@ Overfull \hbox (60.40819pt too wide) detected at line 437
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.439 \end{document}
-                     [5
-
-] (amia-paper.aux)
+l.441 \end{document}
+                     [5] (amia-paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -806,9 +805,9 @@ Here is how much of TeX's memory you used:
  37091 multiletter control sequences out of 15000+600000
  641008 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,14n,93p,1059b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,93p,1059b,520s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
-Output written on amia-paper.pdf (5 pages, 534737 bytes).
+Output written on amia-paper.pdf (5 pages, 534892 bytes).
 PDF statistics:
  267 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
