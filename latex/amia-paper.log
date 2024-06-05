@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  28 MAY 2024 02:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  5 JUN 2024 16:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -456,14 +456,14 @@ LaTeX Font Info:    ... okay on input line 120.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -561,22 +561,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: images/41598_2024_56706_Fig3_HTML.png Graphic file (type png)
 <use images/41598_2024_56706_Fig3_HTML.png>
 Package pdftex.def Info: images/41598_2024_56706_Fig3_HTML.png  used on input line 149.
-(pdftex.def)             Requested size: 229.85374pt x 217.65372pt.
+(pdftex.def)             Requested size: 469.74359pt x 444.81084pt.
+ [1
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 156--157
-\T1/lmr/m/n/10 (+20) an-no-ta-tions, while the multi-class pre-dicts four
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{C:/Users/julev/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}
-
-
- <./images/41598_2024_56706_Fig3_HTML.png (PNG copy)>]
+{C:/Users/julev/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \subsection
+                 {Multi-Label Classification} [2 <./images/41598_2024_56706_Fig3_HTML.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 176--176
 []\T1/lmr/m/n/10 (+20) Withdrawal Symp-tom
  []
@@ -602,61 +595,16 @@ Underfull \hbox (badness 6204) in paragraph at lines 184--185
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 193--194
- []\T1/lmr/m/it/10 (+20) Selected Fea-tures[][] \T1/lmr/m/n/10 (+20) Two fea-tures were used for
- []
-
-
-Underfull \hbox (badness 5475) in paragraph at lines 196--197
-\T1/lmr/m/n/10 (+20) per-formed Term Fre-quency In-verse Doc-u-ment
- []
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 196--197
-\T1/lmr/m/n/10 (+20) Fre-quency (TF-IDF) vec-tor-iza-tion on the in-put
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
- []\T1/lmr/m/it/10 (+20) Transformer[][] \T1/lmr/m/n/10 (+20) The trans-former model uses a
- []
-
-
-Underfull \hbox (badness 4954) in paragraph at lines 199--200
-\T1/lmr/m/n/10 (+20) pre-trained BERT model, which was trained
- []
-
-
-Underfull \hbox (badness 3260) in paragraph at lines 199--200
-\T1/lmr/m/n/10 (+20) on a down-stream task in or-der to cre-ate a
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 238--239
-\T1/lmr/m/n/10 (+20) to-ken was placed in front of it. If the class
- []
-
-
-Underfull \hbox (badness 1824) in paragraph at lines 238--239
-\T1/lmr/m/n/10 (+20) to as Task_2_Feature_2. Ref-er-ences to this
- []
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.239 
-       [2]
-Underfull \hbox (badness 1533) in paragraph at lines 244--245
-\T1/lmr/m/n/10 (+20) in-put text. How-ever, in con-trast to us-ing a
- []
-
-
-Underfull \hbox (badness 5077) in paragraph at lines 272--273
-\T1/lmr/m/n/10 (+20) re-call, and F1-scores as de-scribed pre-vi-ously.
- []
-
-
+l.223 
+       [3]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.271 \subsubsection
+                    {Statistical Tests} [4]
 Underfull \hbox (badness 10000) in paragraph at lines 280--280
 []\T1/lmr/bx/n/10 (+20) Absolute Co-hen's
  []
@@ -696,101 +644,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.322 
-       [3{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+       [5{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 324.
  (C:\Users\julev\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (amia-paper.bbl
-Underfull \hbox (badness 4634) in paragraph at lines 4--12
-[]\T1/lmr/m/n/10 (+20) Dror R, Baumer G, Shlo-mov S, Re-ichart
- []
-
-
-Underfull \hbox (badness 7759) in paragraph at lines 4--12
-\T1/lmr/m/n/10 (+20) R.  The Hitch-hiker's Guide to Test-ing
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 4--12
-\T1/lmr/m/n/10 (+20) Sta-tis-ti-cal Sig-nif-i-cance in Nat-u-ral Lan-guage
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 4--12
-\T1/lmr/m/n/10 (+20) Pro-ceed-ings of the 56th An-nual Meet-ing of
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 14--20
-\T1/lmr/m/n/10 (+20) Nat-u-ral Lan-guage Pro-cess-ing, Statis-tics, and
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 27--31
-\T1/lmr/m/n/10 (+20) H, Faiola A, et al.  The Psy-TAR Dataset:
- []
-
-
-Underfull \hbox (badness 1348) in paragraph at lines 33--39
-\T1/lmr/m/n/10 (+20) ap-proach for de-vel-op-ing a cor-pus of pa-tient
- []
-
-
-Underfull \hbox (badness 4229) in paragraph at lines 33--39
-\T1/lmr/m/n/10 (+20) from: []$https : / / www . sciencedirect . com / science /
- []
-
-
-Underfull \hbox (badness 1043) in paragraph at lines 41--46
-\T1/lmr/m/n/10 (+20) clas-si-fi-ca-tions.  Reg-u-lar Pa-per. 2015;3:107-18.
- []
-
-
-Underfull \hbox (badness 2980) in paragraph at lines 48--53
-\T1/lmr/m/n/10 (+20) statis-tic.  Biochem Med (Za-greb). 2012;22.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--53
-\T1/lmr/m/n/10 (+20) pmc / articles / PMC3900052 / # : ~ : text = Cohen %
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--53
-\T1/lmr/m/n/10 (+20) 20suggested % 20the % 20Kappa % 20result ,[] 1 . 00 %
- []
-
-
-Underfull \hbox (badness 6001) in paragraph at lines 55--61
-[]\T1/lmr/m/n/10 (+20) Chicco D, Tötsch N, Ju-r-man G.  The
- []
-
-
-Underfull \hbox (badness 3098) in paragraph at lines 55--61
-\T1/lmr/m/n/10 (+20) re-li-able than bal-anced ac-cu-racy, book-maker
- []
-
-
-Underfull \hbox (badness 5787) in paragraph at lines 55--61
-\T1/lmr/m/n/10 (+20) in-formed-ness, and marked-ness in two-class
- []
-
-)
+) (amia-paper.bbl)
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.378       \item $
-                   d$ = Number of times both annotators agreed the sample wa... [4{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-Overfull \hbox (60.40819pt too wide) detected at line 439
-[]
- []
-
-
+l.352 \begin{equation}
+                       [6{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.406 \end{flalign*}
+                     [7{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.441 \end{document}
-                     [5] (amia-paper.aux)
+                     [8] (amia-paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -799,17 +672,17 @@ Package rerunfilecheck Info: File `amia-paper.out' has not changed.
 (rerunfilecheck)             Checksum: 74ACD8F40F15F5B771A32828C8E58FF4;3328.
  ) 
 Here is how much of TeX's memory you used:
- 15181 strings out of 474424
- 248603 string characters out of 5741739
- 1950496 words of memory out of 5000000
+ 15183 strings out of 474424
+ 248615 string characters out of 5741739
+ 1944496 words of memory out of 5000000
  37091 multiletter control sequences out of 15000+600000
- 641008 words of font info for 157 fonts, out of 8000000 for 9000
+ 641221 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,14n,93p,1059b,520s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,93p,1059b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
-Output written on amia-paper.pdf (5 pages, 534892 bytes).
+Output written on amia-paper.pdf (8 pages, 534170 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
+ 274 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
  47310 words of extra memory for PDF output out of 51595 (max. 10000000)
 

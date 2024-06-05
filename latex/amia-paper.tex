@@ -1,4 +1,4 @@
-\documentclass[10.7pt, twocolumn]{article}
+\documentclass[10.7pt, onecolumn]{article}
 
 \usepackage[letterpaper, margin=2.54cm, top=2.54cm]{geometry}
 \usepackage[super,comma,sort&compress]{natbib}
@@ -146,7 +146,7 @@ In this report, I aim to investigate the use of statistical tests on ML models t
 
 \begin{figure}[H]
   \centering
-  \includegraphics[totalheight=8cm]{images/41598_2024_56706_Fig3_HTML.png}
+  \includegraphics[]{images/41598_2024_56706_Fig3_HTML.png}
   \caption{Statistcal Workflow Provided by Rainio, Tauho, and Klén\cite{statsBased}}
   \label{fig:statistical test workflow}
 \end{figure}
@@ -271,7 +271,7 @@ The transformer model is identical to the multi-label transformer, except it was
 \subsubsection{Statistical Tests}
 Multi-class classification will be tested using macro and micro averaged precision, recall, and F1-scores as described previously. Accuracy will also be reported.
 
-Additionally, following figure \ref{fig:statistical test workflow}, Cohen's Kappa (Cohen's K) and Matthews Correlation Coefficient (MCC) will be used. Cohen's K returns a value between 1 and -1, where 1 means a perfect agreement, 0 means no agreement above chance, and -1 indicating agreement less than chance. Cutoff points for Cohen's K is given in table \ref{tab:kappaInterpretation}, which is based on McHugh's research\cite{cohen}.
+Additionally, following figure \ref{fig:statistical test workflow}, Cohen's Kappa (Cohen's K) and Matthews Correlation Coefficient (MCC) will be used. Cohen's K returns a value between 1 and -1, where 1 means a perfect agreement, 0 means no agreement above chance, and -1 indicating less agreement than random chance. Cutoff points for Cohen's K is given in table \ref{tab:kappaInterpretation}, which is based on McHugh's research\cite{cohen}.
 
 \begin{table}[H]
   \centering
