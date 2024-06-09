@@ -9,44 +9,49 @@ Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Database file #1: literature.bib
-You've used 9 entries,
+Warning--empty author and editor in xu2023learning
+Warning--missing publisher in xu2023learning
+Warning--empty author and editor in hui2021evaluation
+Warning--missing publisher in hui2021evaluation
+You've used 16 entries,
             3507 wiz_defined-function locations,
-            770 strings with 7958 characters,
-and the built_in function-call counts, 20999 in all, are:
-= -- 2390
-> -- 195
-< -- 96
-+ -- 88
-- -- 41
-* -- 1692
-:= -- 2301
-add.period$ -- 43
-call.type$ -- 9
+            821 strings with 9480 characters,
+and the built_in function-call counts, 32196 in all, are:
+= -- 3644
+> -- 316
+< -- 160
++ -- 141
+- -- 67
+* -- 2529
+:= -- 3514
+add.period$ -- 67
+call.type$ -- 16
 change.case$ -- 4
-chr.to.int$ -- 218
-cite$ -- 9
-duplicate$ -- 1628
-empty$ -- 2058
-format.name$ -- 45
-if$ -- 4927
+chr.to.int$ -- 362
+cite$ -- 20
+duplicate$ -- 2648
+empty$ -- 3140
+format.name$ -- 74
+if$ -- 7561
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 103
-newline$ -- 55
-num.names$ -- 13
-pop$ -- 275
+int.to.str$ -- 16
+missing$ -- 174
+newline$ -- 88
+num.names$ -- 20
+pop$ -- 470
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 225
+skip$ -- 365
 stack$ -- 0
-substring$ -- 4038
-swap$ -- 270
-text.length$ -- 33
+substring$ -- 5905
+swap$ -- 445
+text.length$ -- 62
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 106
-width$ -- 10
-write$ -- 117
+warning$ -- 4
+while$ -- 175
+width$ -- 18
+write$ -- 190
+(There were 4 warnings)

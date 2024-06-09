@@ -1,4 +1,18 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{psyTAR1}
+Zolnoori M, Fung K, Patrick T, Fontelo P, Kharrazi H, Faiola A, et~al.
+\newblock The PsyTAR Dataset: From Patients Generated Narratives to a Corpus of
+  Adverse Drug Events and Effectiveness of Psychiatric Medications.
+\newblock Data in Brief. 2019 03;24:103838.
+
+\bibitem{psyTar2}
+Zolnoori M, Fung KW, Patrick TB, Fontelo P, Kharrazi H, Faiola A, et~al.
+\newblock A systematic approach for developing a corpus of patient reported
+  adverse drug events: A case study for SSRI and SNRI medications.
+\newblock Journal of Biomedical Informatics. 2019;90:103091.
+\newblock Available from:
+  \url{https://www.sciencedirect.com/science/article/pii/S1532046419300012}.
 
 \bibitem{statsPaper}
 Dror R, Baumer G, Shlomov S, Reichart R.
@@ -23,19 +37,9 @@ Rainio O, Tauho J, Klén R.
 \newblock Evaluation metrics and statistical tests for machine learning.
 \newblock Sci Rep. 2024;14(6086).
 
-\bibitem{psyTAR1}
-Zolnoori M, Fung K, Patrick T, Fontelo P, Kharrazi H, Faiola A, et~al.
-\newblock The PsyTAR Dataset: From Patients Generated Narratives to a Corpus of
-  Adverse Drug Events and Effectiveness of Psychiatric Medications.
-\newblock Data in Brief. 2019 03;24:103838.
-
-\bibitem{psyTar2}
-Zolnoori M, Fung KW, Patrick TB, Fontelo P, Kharrazi H, Faiola A, et~al.
-\newblock A systematic approach for developing a corpus of patient reported
-  adverse drug events: A case study for SSRI and SNRI medications.
-\newblock Journal of Biomedical Informatics. 2019;90:103091.
-\newblock Available from:
-  \url{https://www.sciencedirect.com/science/article/pii/S1532046419300012}.
+\bibitem{xu2023learning}
+Xu Z, Liu R, Yang S, Chai Z, Yuan C. Learning Imbalanced Data with Vision
+  Transformers; 2023.
 
 \bibitem{hammingloss}
 Díez J, Luaces O, del Coz JJ, Bahamonde A.
@@ -43,6 +47,10 @@ Díez J, Luaces O, del Coz JJ, Bahamonde A.
 \newblock Regular Paper. 2015;3:107-18.
 \newblock Available from:
   \url{https://link.springer.com/article/10.1007/s13748-014-0060-7}.
+
+\bibitem{hui2021evaluation}
+Hui L, Belkin M. Evaluation of Neural Architectures Trained with Square Loss vs
+  Cross-Entropy in Classification Tasks; 2021.
 
 \bibitem{cohen}
 McHugh ML.
@@ -59,6 +67,26 @@ Chicco D, Tötsch N, Jurman G.
 \newblock BioData Mining. 2021;13.
 \newblock Available from: \url{https://doi.org/10.1371/journal.pone.0177678}.
 
+\bibitem{mccmulticlass}
+Jurman G, Riccadonna S, Furlanello C.
+\newblock A Comparison of MCC and CEN Error Measures in Multi-Class Prediction.
+\newblock PLOS ONE. 2012 08;7(8):1-8.
+\newblock Available from: \url{https://doi.org/10.1371/journal.pone.0041882}.
+
+\bibitem{articlesss}
+Chicco D, Jurman G.
+\newblock The Matthews correlation coefficient (MCC) should replace the ROC AUC
+  as the standard metric for assessing binary classification.
+\newblock BioData Mining. 2023 02;16.
+
+\bibitem{Yang_Berdine_2017}
+Yang S, Berdine G.
+\newblock The receiver operating characteristic (ROC) curve.
+\newblock The Southwest Respiratory and Critical Care Chronicles. 2017
+  May;5(19):34-6.
+\newblock Available from:
+  \url{https://pulmonarychronicles.com/index.php/pulmonarychronicles/article/view/391}.
+
 \bibitem{HOFFMAN2015421}
 Hoffman JIE.
 \newblock Chapter 26 - Analysis of Variance II. More Complex Forms.
@@ -66,5 +94,17 @@ Hoffman JIE.
   Practitioners. Academic Press; 2015. p. 421-47.
 \newblock Available from:
   \url{https://www.sciencedirect.com/science/article/pii/B9780128023877000263}.
+
+\bibitem{article1}
+Wang J, Kan H, Meng F, Mu Q, Shi G, Xiao X.
+\newblock Fake Review Detection Based on Multiple Feature Fusion and Rolling
+  Collaborative Training.
+\newblock IEEE Access. 2020 01;8:182625-39.
+
+\bibitem{article2}
+Flatt C, Jacobs R.
+\newblock Principle Assumptions of Regression Analysis: Testing, Techniques,
+  and Statistical Reporting of Imperfect Data Sets.
+\newblock Advances in Developing Human Resources. 2019 11;21:484-502.
 
 \end{thebibliography}
