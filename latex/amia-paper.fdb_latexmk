@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex amia-paper"] 1717909341.34808 "amia-paper.aux" "amia-paper.bbl" "amia-paper" 1717915043.33135 0
+["bibtex amia-paper"] 1717926508.49845 "amia-paper.aux" "amia-paper.bbl" "amia-paper" 1717926510.46312 0
   "./literature.bib" 1717850801 22158 a6c5fae9a8adb9ca0e6079036e4c6a37 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/bibtex/bst/vancouver/vancouver.bst" 1620930785 40624 ac6ae80a2b874e3abad2798e8fbde6a2 ""
-  "amia-paper.aux" 1717915042 11080 ff2625f412e2e8ab5ca18d558c577a75 "pdflatex"
+  "amia-paper.aux" 1717926509 11651 75d67201871bdec4f871a463af4611e4 "pdflatex"
   (generated)
   "amia-paper.bbl"
   "amia-paper.blg"
   (rewritten before read)
-["pdflatex"] 1717915041.51196 "c:/Users/julev/Desktop/NLP4HealthFinalProject/latex/amia-paper.tex" "amia-paper.pdf" "amia-paper" 1717915043.33182 0
+["pdflatex"] 1717926508.73326 "c:/Users/julev/Desktop/NLP4HealthFinalProject/latex/amia-paper.tex" "amia-paper.pdf" "amia-paper" 1717926510.4636 0
   "C:/Users/julev/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1717909340 96176 40a8022d15c5925d7081b1ad66e03248 ""
   "C:/Users/julev/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1713581573 24236006 680139d74c146c129f07bf66348b57ff ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -29,6 +29,7 @@
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr10.tfm" 1256929440 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr12.tfm" 1256929440 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr5.tfm" 1256929440 12020 46464c854bf317de2a7a0bbe4a1160ca ""
+  "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr6.tfm" 1256929440 12048 c1068d0f4772be9b0ec447692e1d6d82 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr7.tfm" 1256929440 12064 09aa3eeac96bf141d673bb1b0385ce55 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr9.tfm" 1256929440 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmri10.tfm" 1256929440 17148 9556e1b5f936b77a796f68d2d559ba99 ""
@@ -58,12 +59,15 @@
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb" 1256929440 23055 2e5b42921de910eaa97b85df04ca4891 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb" 1256929440 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb" 1256929440 30789 39c6b966e509dbc60e7a1aaaf85d08a0 ""
+  "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb" 1256929440 30698 e53a423459271d6c5cdd91f7559396af ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb" 1256929440 119235 05e5c8d6d60439433e50047898c2c0e0 ""
+  "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb" 1256929440 123394 992f5e87d698d9e94717394c62580ea6 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb" 1256929440 121145 00b210fbe9efd7ce850c04e64670de9a ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb" 1256929440 121065 ba8daf2228d9e511988917831f1e22e9 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb" 1256929440 112593 fda2373ba4420af33949610de4c28fe8 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb" 1256929440 27863 09ce3735688ffde955e72da27c95b61a ""
-  "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb" 1256929440 27941 d1f5d03f61a46c3fcc3a2ba904ddda52 ""
+  "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb" 1256929440 28109 6d61305ed3d0eb794ebe36f15cf44aa0 ""
+  "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb" 1256929440 27835 e135c98a7736a509f536880c6a6e3bd9 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
@@ -159,11 +163,11 @@
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "amia-paper.aux" 1717915042 11080 ff2625f412e2e8ab5ca18d558c577a75 "pdflatex"
-  "amia-paper.bbl" 1717909341 4645 193fcea918f9de164cc5974f011e953a "bibtex amia-paper"
-  "amia-paper.out" 1717915042 6542 3e9a45aeee9bfbfbae4bb86785129a2f "pdflatex"
-  "amia-paper.tex" 1717915042 42220 3657c5b9fd64c0c50a8527fd44331c8c ""
-  "c:/Users/julev/Desktop/NLP4HealthFinalProject/latex/amia-paper.tex" 1717915042 42220 3657c5b9fd64c0c50a8527fd44331c8c ""
+  "amia-paper.aux" 1717926509 11651 75d67201871bdec4f871a463af4611e4 "pdflatex"
+  "amia-paper.bbl" 1717926508 4299 315c6e4286d7d4008a9e8495c499059e "bibtex amia-paper"
+  "amia-paper.out" 1717926509 6512 96ed610bdaf71481891868e542d3075e "pdflatex"
+  "amia-paper.tex" 1717926506 38719 9a57660e32ab39d7593555b5d2de17f5 ""
+  "c:/Users/julev/Desktop/NLP4HealthFinalProject/latex/amia-paper.tex" 1717926506 38719 9a57660e32ab39d7593555b5d2de17f5 ""
   "images/41598_2024_56706_Fig3_HTML.png" 1716724132 291579 e4b2afcb4cc8185b0bc796636d5cafbb ""
   "images/CohensK.png" 1717821795 93974 e34f24d300867da43f182c69d8542c17 ""
   "images/model2_task1_feature1_plot.png" 1716550421 25933 52ac0001529837e026a26e748a19de15 ""

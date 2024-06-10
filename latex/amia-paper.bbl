@@ -59,14 +59,6 @@ McHugh ML.
 \newblock Available from:
   \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3900052/#:~:text=Cohen%20suggested%20the%20Kappa%20result,1.00%20as%20almost%20perfect%20agreement.}
 
-\bibitem{mcc}
-Chicco D, Tötsch N, Jurman G.
-\newblock The Matthews correlation coefficient (MCC) is more reliable than
-  balanced accuracy, bookmaker informedness, and markedness in two-class
-  confusion matrix evaluation.
-\newblock BioData Mining. 2021;13.
-\newblock Available from: \url{https://doi.org/10.1371/journal.pone.0177678}.
-
 \bibitem{mccmulticlass}
 Jurman G, Riccadonna S, Furlanello C.
 \newblock A Comparison of MCC and CEN Error Measures in Multi-Class Prediction.

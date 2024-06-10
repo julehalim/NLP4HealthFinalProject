@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  9 JUN 2024 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  9 JUN 2024 19:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,7 +464,11 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 111.
 LaTeX Warning: Unused global option(s):
     [10.7pt].
 
-(amia-paper.aux)
+(amia-paper.aux
+
+LaTeX Warning: Label `tab:multiclassInput' multiply defined.
+
+)
 \openout1 = `amia-paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -617,129 +621,180 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 135.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 135.
+<images/41598_2024_56706_Fig3_HTML.png, id=165, 1777.64125pt x 1683.28876pt>
+File: images/41598_2024_56706_Fig3_HTML.png Graphic file (type png)
+<use images/41598_2024_56706_Fig3_HTML.png>
+Package pdftex.def Info: images/41598_2024_56706_Fig3_HTML.png  used on input line 158.
+(pdftex.def)             Requested size: 469.74359pt x 444.81084pt.
  [1
 
 {C:/Users/julev/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-<images/41598_2024_56706_Fig3_HTML.png, id=182, 1777.64125pt x 1683.28876pt>
-File: images/41598_2024_56706_Fig3_HTML.png Graphic file (type png)
-<use images/41598_2024_56706_Fig3_HTML.png>
-Package pdftex.def Info: images/41598_2024_56706_Fig3_HTML.png  used on input line 164.
-(pdftex.def)             Requested size: 469.74359pt x 444.81084pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \subsection
+                 {Multi-Label Classification} [2 <./images/41598_2024_56706_Fig3_HTML.png (PNG copy)>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 180.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 180.
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]\T1/lmr/m/n/9 (+20) Adverse Drug Re-ac-tions
+ []
+
+
+Underfull \hbox (badness 7273) in paragraph at lines 194--195
+[]\T1/lmr/m/n/9 (+20) Text con-tains SSI
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+\T1/lmr/m/n/9 (+20) that is cur-rently
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 194--195
+\T1/lmr/m/n/9 (+20) be-ing ad-dressed by
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 212--212
+[]\T1/lmr/m/n/9 (+20) extreme weight gain short-term
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+[]\T1/lmr/m/n/9 (+20) lexapro ex-treme weight gain
+ []
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 
-       [2 <./images/41598_2024_56706_Fig3_HTML.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
-[]\T1/lmr/m/n/10 (+20) Withdrawal Symp-tom
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
-[]\T1/lmr/m/n/10 (+20) Sign/Symptom/Illness
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
-[]\T1/lmr/m/n/10 (+20) Text con-tains
- []
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 202--203
-\T1/lmr/m/n/10 (+20) ex-plicit SSI as a
- []
-
-
-Underfull \hbox (badness 6204) in paragraph at lines 204--205
-\T1/lmr/m/n/10 (+20) that is cur-rently
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.217 
+l.252 
        [3]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.272 \subsubsection
-                    {Transformer} [4]
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
-[]\T1/lmr/bx/n/10 (+20) Absolute Co-hen's
+Underfull \hbox (badness 2005) in paragraph at lines 280--280
+[]\T1/lmr/m/n/9 (+20) extreme weight gain short-term
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-[]\T1/lmr/m/n/10 (+20) None to slight
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+\T1/lmr/m/n/9 (+20) with-drawal symp-toms...extreme
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
-[]\T1/lmr/m/n/10 (+20) Moderate
+Underfull \hbox (badness 2005) in paragraph at lines 284--284
+[]\T1/lmr/m/n/9 (+20) extreme weight gain short-term
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
-[]\T1/lmr/m/n/10 (+20) Substantial
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
-[]\T1/lmr/m/n/10 (+20) Almost per-fect
+Underfull \hbox (badness 2005) in paragraph at lines 284--284
+[]\T1/lmr/m/n/9 (+20) extreme weight gain short-term
  []
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.330 
+l.297 
+       [4]
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
+[]\T1/lmr/m/n/9 (+20) None to slight
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+[]\T1/lmr/m/n/9 (+20) Substantial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+[]\T1/lmr/m/n/9 (+20) Almost per-fect
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+[]\T1/lmr/m/n/9 (+20) Very Poor
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.380 
        [5{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-[]\T1/lmr/m/n/10 (+20) Very Poor
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
-[]\T1/lmr/m/n/10 (+20) Moderate
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 358.
-(C:\Users\julev\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 384.
+ (C:\Users\julev\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+Underfull \hbox (badness 5288) in paragraph at lines 415--415
+[]\T1/lmr/m/n/9 (+20) Task 1 Fea-ture 1
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 417--417
+[]\T1/lmr/m/n/9 (+20) Task 1 Fea-ture 1
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 419--419
+[]\T1/lmr/m/n/9 (+20) Task 1 Fea-ture 2
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 421--421
+[]\T1/lmr/m/n/9 (+20) Task 1 Fea-ture 2
+ []
+
+
+Overfull \hbox (32.0158pt too wide) in paragraph at lines 411--424
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.375 \newpage
-               [6{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 389.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 389.
-
-Underfull \hbox (badness 5288) in paragraph at lines 393--393
-[]\T1/lmr/m/n/9 (+20) Task 1 Fea-ture 1
+l.476 \end{table}
+                  [6{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+Underfull \hbox (badness 5288) in paragraph at lines 494--494
+[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 1
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 395--395
-[]\T1/lmr/m/n/9 (+20) Task 1 Fea-ture 1
+Underfull \hbox (badness 5288) in paragraph at lines 496--496
+[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 1
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 397--397
-[]\T1/lmr/m/n/9 (+20) Task 1 Fea-ture 2
+Underfull \hbox (badness 4673) in paragraph at lines 498--498
+[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 2
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 399--399
-[]\T1/lmr/m/n/9 (+20) Task 1 Fea-ture 2
+Underfull \hbox (badness 4673) in paragraph at lines 500--500
+[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 2
  []
 
 
-Overfull \hbox (32.0158pt too wide) in paragraph at lines 389--402
+Underfull \hbox (badness 4673) in paragraph at lines 502--502
+[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 3
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 504--504
+[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 3
+ []
+
+
+Overfull \hbox (32.0158pt too wide) in paragraph at lines 490--507
  [][] 
  []
 
@@ -747,256 +802,206 @@ Overfull \hbox (32.0158pt too wide) in paragraph at lines 389--402
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.453 
+l.510 
        [7]
-Underfull \hbox (badness 5288) in paragraph at lines 470--470
-[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 1
- []
-
-
-Underfull \hbox (badness 5288) in paragraph at lines 472--472
-[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 1
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 474--474
-[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 2
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 476--476
-[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 2
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 478--478
-[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 3
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 480--480
-[]\T1/lmr/m/n/9 (+20) Task 2 Fea-ture 3
- []
-
-
-Overfull \hbox (32.0158pt too wide) in paragraph at lines 466--483
- [][] 
- []
-
-<images/CohensK.png, id=257, 723.4227pt x 663.4386pt>
+<images/CohensK.png, id=254, 723.4227pt x 663.4386pt>
 File: images/CohensK.png Graphic file (type png)
 <use images/CohensK.png>
-Package pdftex.def Info: images/CohensK.png  used on input line 494.
-(pdftex.def)             Requested size: 469.75557pt x 430.80481pt.
+Package pdftex.def Info: images/CohensK.png  used on input line 516.
+(pdftex.def)             Requested size: 328.82669pt x 301.56134pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.498 
-       [8]
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-[]\T1/lmr/bx/n/10 (+20) Task 2
+l.522 
+       [8 <./images/CohensK.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+[]\T1/lmr/bx/n/9 (+20) Task 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (+20) Fea-ture 1
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+\T1/lmr/bx/n/9 (+20) Fea-ture 1
  []
 
 
-Overfull \hbox (3.72026pt too wide) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (-20) Trans-former| 
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+[]\T1/lmr/bx/n/9 (+20) Task 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-[]\T1/lmr/bx/n/10 (+20) Task 2
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+\T1/lmr/bx/n/9 (+20) Fea-ture 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (+20) Fea-ture 1
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+\T1/lmr/bx/n/9 (+20) Lo-gis-tic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (+20) Lo-gis-tic
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+[]\T1/lmr/bx/n/9 (+20) Task 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-[]\T1/lmr/bx/n/10 (+20) Task 2
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+\T1/lmr/bx/n/9 (+20) Fea-ture 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (+20) Fea-ture 2
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+[]\T1/lmr/bx/n/9 (+20) Task 2
  []
 
 
-Overfull \hbox (3.72026pt too wide) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (-20) Trans-former| 
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+\T1/lmr/bx/n/9 (+20) Fea-ture 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-[]\T1/lmr/bx/n/10 (+20) Task 2
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+\T1/lmr/bx/n/9 (+20) Lo-gis-tic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (+20) Fea-ture 2
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+[]\T1/lmr/bx/n/9 (+20) Task 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (+20) Lo-gis-tic
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
+\T1/lmr/bx/n/9 (+20) Fea-ture 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-[]\T1/lmr/bx/n/10 (+20) Task 2
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+[]\T1/lmr/bx/n/9 (+20) Task 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (+20) Fea-ture 3
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+\T1/lmr/bx/n/9 (+20) Fea-ture 3
  []
 
 
-Overfull \hbox (3.72026pt too wide) in paragraph at lines 512--512
-\T1/lmr/bx/n/10 (-20) Trans-former| 
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+\T1/lmr/bx/n/9 (+20) Lo-gis-tic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
-[]\T1/lmr/bx/n/10 (+20) Task 2
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
-\T1/lmr/bx/n/10 (+20) Fea-ture 3
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
-\T1/lmr/bx/n/10 (+20) Lo-gis-tic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 514--514
-[]\T1/lmr/bx/n/10 (+20) MCC
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+[]\T1/lmr/bx/n/9 (+20) MCC
  []
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.519 \end{table}
-                  [9 <./images/CohensK.png>]
+l.560 F
+       inally, the results of the MCC scores show that transformer models do... [9]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.539 
-       [10]
+l.578 \newpage
+               [10] (amia-paper.bbl)
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.560 \newpage
-               [11] (amia-paper.bbl)
+l.590 \begin{equation}
+                       [11]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.572 \begin{equation}
-                       [12]
+l.650 \end{flalign*}
+                     [12{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.632 \end{flalign*}
-                     [13{C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.673 \newpage
-               [14]
-<images/model2_task1_feature1_plot.png, id=320, 611.4042pt x 450.9648pt>
+l.691 \newpage
+               [13]
+<images/model2_task1_feature1_plot.png, id=311, 611.4042pt x 450.9648pt>
 File: images/model2_task1_feature1_plot.png Graphic file (type png)
 <use images/model2_task1_feature1_plot.png>
-Package pdftex.def Info: images/model2_task1_feature1_plot.png  used on input line 678.
+Package pdftex.def Info: images/model2_task1_feature1_plot.png  used on input line 696.
 (pdftex.def)             Requested size: 469.77512pt x 346.5008pt.
-<images/model2_task1_feature2_plot.png, id=321, 611.4042pt x 450.9648pt>
+<images/model2_task1_feature2_plot.png, id=312, 611.4042pt x 450.9648pt>
 File: images/model2_task1_feature2_plot.png Graphic file (type png)
 <use images/model2_task1_feature2_plot.png>
-Package pdftex.def Info: images/model2_task1_feature2_plot.png  used on input line 685.
+Package pdftex.def Info: images/model2_task1_feature2_plot.png  used on input line 703.
 (pdftex.def)             Requested size: 469.77512pt x 346.5008pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.689 
-       [15 <./images/model2_task1_feature1_plot.png>]
-<images/model2_task2_feature1_plot.png, id=327, 611.4042pt x 450.9648pt>
+l.707 
+       [14 <./images/model2_task1_feature1_plot.png>]
+<images/model2_task2_feature1_plot.png, id=318, 611.4042pt x 450.9648pt>
 File: images/model2_task2_feature1_plot.png Graphic file (type png)
 <use images/model2_task2_feature1_plot.png>
-Package pdftex.def Info: images/model2_task2_feature1_plot.png  used on input line 692.
+Package pdftex.def Info: images/model2_task2_feature1_plot.png  used on input line 710.
 (pdftex.def)             Requested size: 469.77512pt x 346.5008pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.696 
-       [16 <./images/model2_task1_feature2_plot.png>]
-<images/model2_task2_feature2_plot.png, id=333, 611.4042pt x 450.9648pt>
+l.714 
+       [15 <./images/model2_task1_feature2_plot.png>]
+<images/model2_task2_feature2_plot.png, id=324, 611.4042pt x 450.9648pt>
 File: images/model2_task2_feature2_plot.png Graphic file (type png)
 <use images/model2_task2_feature2_plot.png>
-Package pdftex.def Info: images/model2_task2_feature2_plot.png  used on input line 699.
+Package pdftex.def Info: images/model2_task2_feature2_plot.png  used on input line 717.
 (pdftex.def)             Requested size: 469.77512pt x 346.5008pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.703 
-       [17 <./images/model2_task2_feature1_plot.png>]
-<images/model2_task2_feature3_plot.png, id=339, 611.4042pt x 450.9648pt>
+l.721 
+       [16 <./images/model2_task2_feature1_plot.png>]
+<images/model2_task2_feature3_plot.png, id=330, 611.4042pt x 450.9648pt>
 File: images/model2_task2_feature3_plot.png Graphic file (type png)
 <use images/model2_task2_feature3_plot.png>
-Package pdftex.def Info: images/model2_task2_feature3_plot.png  used on input line 706.
+Package pdftex.def Info: images/model2_task2_feature3_plot.png  used on input line 724.
 (pdftex.def)             Requested size: 469.77512pt x 346.5008pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.710 \newpage
-               [18 <./images/model2_task2_feature2_plot.png>]
+l.728 \newpage
+               [17 <./images/model2_task2_feature2_plot.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.710 \newpage
-               [19 <./images/model2_task2_feature3_plot.png>]
+l.728 \newpage
+               [18 <./images/model2_task2_feature3_plot.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.715 \end{document}
-                     [20] (amia-paper.aux)
+l.733 \end{document}
+                     [19] (amia-paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `amia-paper.out' has not changed.
-(rerunfilecheck)             Checksum: 3E9A45AEEE9BFBFBAE4BB86785129A2F;6542.
+(rerunfilecheck)             Checksum: 96ED610BDAF71481891868E542D3075E;6512.
  ) 
 Here is how much of TeX's memory you used:
- 16706 strings out of 474424
- 274669 string characters out of 5741739
- 1944496 words of memory out of 5000000
- 38501 multiletter control sequences out of 15000+600000
- 657036 words of font info for 190 fonts, out of 8000000 for 9000
+ 16734 strings out of 474424
+ 274981 string characters out of 5741739
+ 1947496 words of memory out of 5000000
+ 38500 multiletter control sequences out of 15000+600000
+ 661290 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,14n,93p,1059b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
-Output written on amia-paper.pdf (20 pages, 854149 bytes).
+<C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb>
+Output written on amia-paper.pdf (19 pages, 886010 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
+ 446 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
- 55652 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 57692 words of extra memory for PDF output out of 61914 (max. 10000000)
 
