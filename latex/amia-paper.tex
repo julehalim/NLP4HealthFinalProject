@@ -137,10 +137,13 @@ Dataset containing online patient reviews of prescribed medication, provided by 
 
 Various multi-label and multi-class classification tasks were created. Afterwards, each model was evaluated using traditional machine learning metrics and statistical tests.
 
-
-\subsection{Results and Discussion}
+\subsection{Results}
 
 When comparing traditional machine learning metrics, transformer models generally outperform their logistic regression, except for one task-feature pair. Statistical test results were reported and interpretations were provided.
+
+\subsection{Discussion}
+
+Interpretations of statistical tests were discussed in the context of model behaviour. Possible limitations and issues were also described.
 
 \subsection{Conclusion}
 
@@ -151,7 +154,7 @@ Statistical tests provide valuable insight into model behaviour outside of tradi
 %==============================
 Statistical tests are a popular and long-standing method in multiple fields of science. However, studies in natural language processing (NLP) and machine learning (ML) do not generally include statistcal testing as part of their model evaluation. A survey on 233 published papers in the field of NLP showed that 132 of these papers did not report statistical significance\cite{statsPaper}. However, more studies have begun advocating for the use of these tests to show that experimental results are not coincidental\cite{statsPaper} and argue that a combination of NLP and statistical tests can provide a framework for the development of robust, high-throughput health NLP systems\cite{10.1197/jamia.M3028}. 
 
-In this report, I aim to investigate the use of statistical tests on ML models that predict multi-label and multi-class  classification tasks using the statistical test workflow suggested by Rainio, Tauho, and Klén\cite{statsBased} and compare different feature inputs.
+In this report, I aim to investigate the use of statistical tests on ML models that predict multi-label and multi-class  classification tasks using the statistical test workflow suggested by Rainio, Tauho, and Klén\cite{statsBased}, shown in figure \ref{fig:statistical test workflow}, and compare different feature inputs.
 
 \begin{figure}[H]
   \centering
@@ -160,41 +163,91 @@ In this report, I aim to investigate the use of statistical tests on ML models t
   \label{fig:statistical test workflow}
 \end{figure}
  
-The Sentence\_Labeling sheet of the PsyTAR dataset used in this study is provided by Zoolnoori et al\cite{psyTAR1}\cite{psyTar2}. This sheet contains three sections of interest. The first is sentences from online patient reviews of certain drugs. The second is annotations of certain labels, described below in table \ref{tab:6Labels}. The third is drug labels, which indicates which drug each sentence is reviewing.
+The Sentence\_Labeling sheet of the PsyTAR dataset used in this study is provided by Zoolnoori et al\cite{psyTAR1}\cite{psyTar2}. This sheet contains three sections of interest. The first is sentences from online patient reviews of certain drugs. The second is annotations of certain labels, described below in table \ref{tab:6Labels}. The third is drug labels, which indicates which drug each sentence is reviewing. Figure \ref{tab:stats} shows descriptive statistics of the dataset.
 
 Two classification tasks were performed using a baseline logistic regression model and a transformer model. The multi label class predicts six binary annotations, while the multi-class predicts four different drugs. For each model, different features will be used as inputs. The resulting predictions will be used for statistical tests in order to determine their statistical signifance. 
 
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|l|r|}
+      \hline
+      \multicolumn{2}{|l|}{\textbf{Number of Sentences}} & 6009 \\
+      \hline
+      \multicolumn{2}{|l|}{\textbf{Sample Review Text}} & \parbox{10cm}{extreme weight gain, short-term memory loss, hair loss.} \\
+      \hline
+      \multicolumn{2}{|l|}{\textbf{Drug Class Distribution}} & \\
+      \hline
+      & Cymbalta & 1707 \\
+      \cline{2-3}
+      & Lexapro & 1492 \\
+      \cline{2-3}
+      & Effexorxr & 1549 \\
+      \cline{2-3}
+      & Zoloft & 1261 \\
+      \hline
+      \multicolumn{2}{|l|}{\textbf{Review Text Label (Positive)}} & \\
+      \hline
+      & ADR (Positive) & 2169 \\
+      \cline{2-3}
+      & WD (Positive) & 439 \\
+      \cline{2-3}
+      & EF (Positive) & 1088 \\
+      \cline{2-3}
+      & INF (Positive) & 338 \\
+      \cline{2-3}
+      & SSI (Positive) & 790 \\
+      \cline{2-3}
+      & DI (Positive) & 622 \\
+      \hline
+      \multicolumn{2}{|l|}{\textbf{Review Text Label (Negative)}} & \\
+      \hline
+      & ADR (Negative) & 3840 \\
+      \cline{2-3}
+      & WD (Negative) & 5570 \\
+      \cline{2-3}
+      & EF (Negative) & 4921 \\
+      \cline{2-3}
+      & INF (Negative) & 5671 \\
+      \cline{2-3}
+      & SSI (Negative) & 5219 \\
+      \cline{2-3}
+      & DI (Negative) & 5387 \\
+      \hline
+  \end{tabular}
+  \caption{Descriptive Statistics from Sentence Labeling Dataset - Description of Review Text Labels Are Found in Table \ref{tab:6Labels}.}
+  \label{tab:stats}
+\end{table}
 %==============================
 \section{Methods}\label{methods}
 %==============================
 % ASK ON WHETHER I NEED TO DESCRIBE IN DETAIL THE STATISTCAL TESTS USED
 
 \subsection{Preprocessing}
-Two main preprocessing steps were done. Firstly, as the drug labels in the data were concatenated with review ID, the review ID was stripped and only the drug label was added to a new column. Secondly, the review text was preprocessed through tokenization, as well as stopword and punctuation removal. The dataset consists of 6009 records. The data was split into train, validation, and test sets using a 45:45:10 ratio. Additional feature processing specific to each task is described in their respective sections.
+Two main preprocessing steps were done. Firstly, as the drug labels in the data were concatenated with review ID, the review ID was stripped and only the drug label was added to a new column. Secondly, the review text was preprocessed through tokenization, as well as stopword and punctuation removal. The data was split into train, validation, and test sets using a 45:45:10 ratio. Additional feature processing specific to each task is described in their respective sections.
 \subsection{Multi-Label Classification}
 Multi-label classification involves predicting six labels, as shown in table \ref{tab:6Labels}. Each label is a binary task (1 for present and 0 for absent), which has been manually annotated. This task aims to predict annotations for a given review text.
 
 \begin{table}[H]
   \centering
   \small
-  \begin{tabular}{|p{4cm}|p{3cm}|}
+  \begin{tabular}{|c|c|}
     \hline
     \textbf{Predicted Class} & \textbf{Description} \\
     \hline
-    Adverse Drug Reactions (ADR) & - \\
+    Adverse Drug Reactions (ADR) & Adverse reactions to the drug \\
     \hline
-    Withdrawal Symptom (WD) & - \\
+    Withdrawal Symptom (WD) & Withdrawal symptoms after they stopped using the drug \\
     \hline
-    Effective (EF) & - \\
+    Effective (EF) & Drug is effective \\
     \hline
-    Ineffective (INF) & - \\
+    Ineffective (INF) & Drug is ineffective\\
     \hline
     Sign/Symptom/Illness (SSI) & Text contains explicit SSI as a result of the drug \\
     \hline
     Drug Indication (DI) & Text contains SSI that is currently being addressed by the drug \\
     \hline
   \end{tabular}
-  \caption{The six labels predicted by multi-label classifiers}
+  \caption{The Six Labels Predicted by Multi-Label Classifiers}
   \label{tab:6Labels}
 \end{table}
 
@@ -209,7 +262,7 @@ Two features were used for multi-label classification. The first is the preproce
     \hline
     \textbf{Feature 1} & \textbf{Feature 2} \\
     \hline
-    extreme weight gain short-term memory & lexapro extreme weight gain short-term memory\\
+    extreme weight gain short-term memory hair loss & lexapro extreme weight gain short-term memory hair loss\\
     \hline
   \end{tabular}
   \caption{Sample Inputs for Each Feature in Multi-Label Classification}
@@ -277,11 +330,11 @@ The third feature is to only use the annotation inputs. This will be referred to
     \hline
     \textbf{Feature 1 Transformer} & \textbf{Feature 2 Transformer} & \textbf{Feature 3 Transformer} \\
     \hline
-    extreme weight gain short-term memory & [POS] adverse drug reaction [NEG] withdrawal symptoms...extreme weight gain short-term memory &[POS] adverse drug reaction [NEG] withdrawal symptoms...[NEG] drug indication\\
+    extreme weight gain short-term memory hair loss & [POS] adverse drug reaction [NEG] withdrawal symptoms...extreme weight gain short-term memory hair loss &[POS] adverse drug reaction [NEG] withdrawal symptoms...[NEG] drug indication\\
     \hline
     \textbf{Feature 1 Logistic Regression} & \textbf{Feature 2 Logistic Regression} & \textbf{Feature 3 Logistic Regression} \\
     \hline
-    extreme weight gain short-term memory & extreme weight gain short-term memory 1 0 1 1 0 0 & 1 0 1 1 0 0\\
+    extreme weight gain short-term memory hair loss & extreme weight gain short-term memory hair loss 1 0 1 1 0 0 & 1 0 1 1 0 0\\
     \hline
   \end{tabular}
   \caption{Sample Inputs for Each Feature in Multi-Class Classification}
@@ -325,7 +378,7 @@ The transformer model is identical to the multi-label transformer, except it was
 \subsubsection{Statistical Tests}
 Multi-class classification will be tested using macro averaged precision, recall, and F1-scores as described previously. The use of macro averaging was due to class imbalance (zoloft had a test count of 565 while cymbalta had a test count of 791). Accuracy will also be reported.
 
-Additionally, following figure \ref{fig:statistical test workflow}, Cohen's Kappa (Cohen's K) and Matthews Correlation Coefficient (MCC) will be used. Cohen's K is used to calculate inter-model agreement on predictions. It returns a value between 1 and -1, where 1 means a perfect agreement, 0 means no agreement above chance, and -1 indicating less agreement than random chance.
+Additionally, following figure \ref{fig:statistical test workflow}, Cohen's Kappa\cite{d4} (Cohen's K) and Matthews Correlation Coefficient (MCC) will be used. Cohen's K is used to calculate inter-model agreement on predictions. It returns a value between 1 and -1, where 1 means a perfect agreement, 0 means no agreement above chance, and -1 indicating less agreement than random chance.
 
 \begin{table}[H]
   \centering
@@ -376,7 +429,7 @@ MCC returns a value betwen 1 and -1, where 1 means perfect predictions, 0 means 
 \end{table}
 
 \subsection{Friedman's Test of Significance}
-In order to investigate whether the predictions are significantly different from each other, Friedman's test will be attempted to be performed on both tasks. Friedman's test is a hypothesis testing method, where the null hypothesis is that there is no significant difference between two samples of predictions\cite{HOFFMAN2015421}. Meanwhile, the alternative hypothesis is that a significant difference does exist. A cutoff point ($\alpha$ value) of 0.05 will be used, meaning that if the p-value is <0.05, the null hypothesis will be rejected.
+In order to investigate whether the predictions are significantly different from each other, Friedman's test will be attempted to be performed on both tasks. Friedman's test\cite{7c3c84e5-7230-3033-8b6c-ec430fb73d61}\cite{milton} is a hypothesis testing method, where the null hypothesis is that there is no significant difference between two samples of predictions\cite{HOFFMAN2015421}. Meanwhile, the alternative hypothesis is that a significant difference does exist. A cutoff point ($\alpha$ value) of 0.05 will be used, meaning that if the p-value is <0.05, the null hypothesis will be rejected.
 
 This test was found to not be suitable for the multi-class classification task due to the output. Additional discussion on the impact of this will be discussed in the discussion and conclusion section. For multi-label classification, each label had the Friedman's test performed.
 
@@ -513,7 +566,7 @@ The resulting predictions of the model for multi-class classification generally 
 A heatmap of Cohen's K for each model tested against each other is shown in figure \ref{fig:cohenK}.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\textwidth]{images/CohensK.png}
+  \includegraphics[]{images/CohensK.png}
   \caption{Heatmap of Cohen's Kappa Results on Multi-Class Classification Task}
   \label{fig:cohenK}
 \end{figure}
@@ -541,7 +594,7 @@ Each model was compared against the ground truth to calculate their MCC values. 
   \label{tab:mccTab}
 \end{table}
 
-The results of the MCC indicate that most models are not able to correctly predict across all classes evenly. For example, the transformer models for features 1 and 2 have MCC scores that indicate very poor predictions when considering performance across all classes. This could suggest that the model performs significantly worse when considering a class-to-class basis.
+The results of the MCC indicate that most models are not able to correctly predict across all classes evenly. For example, the transformer models for features 1 and 2 have MCC scores that indicate very poor predictions when considering performance across all classes. This could suggest that the model performs significantly worse when considering a class-to-class basis, possibly indicating bias towards a certain class (e.g., defaulting to a majority class for incorrect predictions).
 
 However, for some models that do not have high accuracy, they appear to have higher MCC scores. For example, the transformer for feature 3 has an MCC score of 0.10. This particular transformer model predicted only the majority class, allowing it to minimize false positives and false negatives. As such, although they do not have a good accuracy, they are able to minimize misclassifications, leading to a decent MCC score.
 
@@ -550,7 +603,7 @@ However, for some models that do not have high accuracy, they appear to have hig
 %==============================
 
 \subsection{Multi-Label Classification Task}
-Interpretation of the statistical tests on the multi-label task can be considered in three stages. First, the traditional machine learning metrics show that transformer models are able to outperform their logistic regression baselines consistently. Secondly, the HL values provide further support that transformers are able to outperform logistic regression models, even when considering individual label predictions. However, the HL shows that logistic regression models perform better on a label-by-label basis than suggested by their accuracy.Finally, Friedman's test shows that the difference in model predictions are statistically significant.
+Interpretation of the statistical tests on the multi-label task can be considered in three stages. First, the traditional machine learning metrics show that transformer models are able to outperform their logistic regression baselines consistently. Secondly, the HL values provide further support that transformers are able to outperform logistic regression models, even when considering individual label predictions. However, the HL shows that logistic regression models perform better on a label-by-label basis than suggested by their accuracy. Finally, Friedman's test shows that the difference in model predictions are statistically significant.
 
 
 \subsection{Multi-Class Classification Task}
@@ -562,6 +615,10 @@ Finally, the results of the MCC scores show that transformer models do not tend 
 \subsection{Friedman's Test on Multi-Class Classification}
 
 The application of Friedman's test on multi-class classification poses a challenge due to the output, which comes in the form of text. Friedman's test calculates differences between a series of predictions. However, text data such as drug names need to be preprocessed into numerical variables. While some studies have used Friedman's test on textual data by converting it into a ranking task\cite{article1}, there is no consensus on how to handle this change in features. Future work could be done to tackle this issue.
+
+\subsection{Limitations}
+
+One limitation of this study was how the dataset was not investigated using certain assumption tests. For example, logistic regression models needs to meet the assumption of independent errors, which was not tested in this study. However, the most vital limitation of this paper is that interpretations are based on possible model behaviours, not actual model behaviours. Further in-depth investigation of proposed model behaviours could provide a deeper understanding into how statistical tests affect model evaluation. For example, an investigation whether the high Cohen's K value between the transformer models in task 2 feature 1 and feature 3 is due to predictions prioritizing the majority class or some other class imbalance would allow for deeper understanding of model behaviour.
 
 \section{Conclusion and Future Directions}
 
@@ -575,11 +632,10 @@ Future work can investigate more sophisticated workflows to understand model beh
 
 % could expand into studying the use of this on different datasets because it would provide more statistical power (that the models can generalize outside of datasets)
 %==============================
-\newpage
 \bibliographystyle{vancouver}
 \bibliography{literature}
 %==============================
-
+\newpage
 \section{Appendix}
 
 \subsection{Appendix A - Equations for Statistical Tests}
@@ -725,9 +781,8 @@ k & = \text{number of instances}
   \caption{Task 2 Feature 3 Model Training (Total Training Time: 6590.17 Seconds)}
   \label{fig:t2f3plot}
 \end{figure}
-\newpage
 \subsection{Appendix C - Source Code}
 
-%\includepdf[page=-]{pdf_final_code.pdf}
-%\includepdf[page=-]{pdf_final_visualization_code.pdf}
+\includepdf[noautoscale=true, scale=0.75,page=-,fitpaper=true]{pdf_final_code.pdf}
+\includepdf[noautoscale=true, scale=0.75,page=-,fitpaper=true]{pdf_final_visualization_code.pdf}
 \end{document}

@@ -13,45 +13,45 @@ Warning--empty author and editor in xu2023learning
 Warning--missing publisher in xu2023learning
 Warning--empty author and editor in hui2021evaluation
 Warning--missing publisher in hui2021evaluation
-You've used 15 entries,
+You've used 18 entries,
             3507 wiz_defined-function locations,
-            815 strings with 9171 characters,
-and the built_in function-call counts, 30771 in all, are:
-= -- 3464
-> -- 304
-< -- 160
-+ -- 135
-- -- 64
-* -- 2418
-:= -- 3357
-add.period$ -- 62
-call.type$ -- 15
+            843 strings with 9936 characters,
+and the built_in function-call counts, 35188 in all, are:
+= -- 3975
+> -- 333
+< -- 204
++ -- 144
+- -- 70
+* -- 2702
+:= -- 3825
+add.period$ -- 77
+call.type$ -- 18
 change.case$ -- 4
-chr.to.int$ -- 362
-cite$ -- 19
-duplicate$ -- 2527
-empty$ -- 3003
-format.name$ -- 70
-if$ -- 7222
+chr.to.int$ -- 458
+cite$ -- 22
+duplicate$ -- 3064
+empty$ -- 3422
+format.name$ -- 73
+if$ -- 8290
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 164
-newline$ -- 82
-num.names$ -- 19
-pop$ -- 451
+int.to.str$ -- 18
+missing$ -- 191
+newline$ -- 100
+num.names$ -- 22
+pop$ -- 536
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 345
+skip$ -- 402
 stack$ -- 0
-substring$ -- 5653
-swap$ -- 428
-text.length$ -- 62
+substring$ -- 6216
+swap$ -- 504
+text.length$ -- 80
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 167
-width$ -- 17
-write$ -- 177
+while$ -- 197
+width$ -- 20
+write$ -- 216
 (There were 4 warnings)

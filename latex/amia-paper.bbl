@@ -52,6 +52,12 @@ Díez J, Luaces O, del Coz JJ, Bahamonde A.
 Hui L, Belkin M. Evaluation of Neural Architectures Trained with Square Loss vs
   Cross-Entropy in Classification Tasks; 2021.
 
+\bibitem{d4}
+Cohen J.
+\newblock A Coefficient of Agreement for Nominal Scales.
+\newblock Educational and Psychological Measurement. 1960;20(1):37-46.
+\newblock Available from: \url{https://doi.org/10.1177/001316446002000104}.
+
 \bibitem{cohen}
 McHugh ML.
 \newblock Interrater reliability: the kappa statistic.
@@ -78,6 +84,22 @@ Yang S, Berdine G.
   May;5(19):34-6.
 \newblock Available from:
   \url{https://pulmonarychronicles.com/index.php/pulmonarychronicles/article/view/391}.
+
+\bibitem{7c3c84e5-7230-3033-8b6c-ec430fb73d61}
+Friedman M.
+\newblock A Comparison of Alternative Tests of Significance for the Problem of
+  m Rankings.
+\newblock The Annals of Mathematical Statistics. 1940;11(1):86-92.
+\newblock Available from: \url{http://www.jstor.org/stable/2235971}.
+
+\bibitem{milton}
+Friedman M.
+\newblock The Use of Ranks to Avoid the Assumption of Normality Implicit in the
+  Analysis of Variance.
+\newblock Journal of the American Statistical Association.
+  1937;32(200):675-701.
+\newblock Available from:
+  \url{https://www.tandfonline.com/doi/abs/10.1080/01621459.1937.10503522}.
 
 \bibitem{HOFFMAN2015421}
 Hoffman JIE.
