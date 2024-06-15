@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  11 JUN 2024 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.20)  15 JUN 2024 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2248,15 +2248,15 @@ Package rerunfilecheck Info: File `amia-paper.out' has not changed.
 (rerunfilecheck)             Checksum: 6FFB1699203637038DD0BDD2A10D9475;6654.
  ) 
 Here is how much of TeX's memory you used:
- 16919 strings out of 474424
- 281525 string characters out of 5741739
+ 16915 strings out of 474424
+ 281485 string characters out of 5741739
  1946496 words of memory out of 5000000
  38683 multiletter control sequences out of 15000+600000
- 661059 words of font info for 203 fonts, out of 8000000 for 9000
+ 660893 words of font info for 201 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,18n,93p,1059b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb>
-Output written on amia-paper.pdf (70 pages, 26335380 bytes).
+Output written on amia-paper.pdf (70 pages, 26335347 bytes).
 PDF statistics:
  1954 PDF objects out of 2073 (max. 8388607)
  91 named destinations out of 1000 (max. 500000)
