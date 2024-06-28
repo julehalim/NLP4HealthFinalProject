@@ -135,7 +135,7 @@ To investigate possible roles of statistical tests on natural language processin
 Dataset containing online patient reviews of prescribed medication, provided by Zoolnori et al\cite{psyTAR1}\cite{psyTar2}. The dataset contains annotated labels for each review sentence, along with the medication being reviewed.
 \subsection{Methods}
 
-Various multi-label and multi-class classification tasks were created. Afterwards, each model was evaluated using traditional machine learning metrics and statistical tests.
+Various multi-label and multi-class classification tasks were created. Afterwards, each model was evaluated using traditional machine learning metrics as well as statistical tests.
 
 \subsection{Results}
 
@@ -163,7 +163,7 @@ In this report, I aim to investigate the use of statistical tests on ML models t
   \label{fig:statistical test workflow}
 \end{figure}
  
-The Sentence\_Labeling sheet of the PsyTAR dataset used in this study is provided by Zoolnoori et al\cite{psyTAR1}\cite{psyTar2}. This sheet contains three sections of interest. The first is sentences from online patient reviews of certain drugs. The second is annotations of certain labels, described below in table \ref{tab:6Labels}. The third is drug labels, which indicates which drug each sentence is reviewing. Figure \ref{tab:stats} shows descriptive statistics of the dataset.
+The Sentence\_Labeling sheet of the PsyTAR dataset used in this study is provided by Zoolnoori et al\cite{psyTAR1}\cite{psyTar2}. This sheet contains three sections of interest. The first is sentences from online patient reviews of certain drugs. The second is annotations of certain labels, described below in table \ref{tab:6Labels}. The third is drug labels, which indicates which drug each sentence is reviewing. Table \ref{tab:stats} shows descriptive statistics of the dataset.
 
 Two classification tasks were performed using a baseline logistic regression model and a transformer model. The multi label class predicts six binary annotations, while the multi-class predicts four different drugs. For each model, different features will be used as inputs. The resulting predictions will be used for statistical tests to determine their statistical significance. 
 
@@ -272,6 +272,24 @@ Two features were used for multi-label classification. The first is the preproce
 \subsubsection{Logistic Regression}
 The logistic regression model performed Term Frequency Inverse Document Frequency (TF-IDF) vectorization on the input text. A multi-output classifier was built upon a logistic regression model, which was then tuned using hyperparameter tuning.
 
+\begin{table}[H]
+  \centering
+  \small
+  \begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+    \hline
+    \textbf{Feature 1: Best Parameters Found} & \textbf{Value} & \textbf{Feature 2: Best Parameters Found} & \textbf{Value} \\
+    \hline
+    estimator\_C & 10 & estimator\_C & 10 \\
+    \hline
+    estimator\_penalty & l2 & estimator\_penalty & l2 \\
+    \hline
+    estimator\_solver & saga & estimator\_solver & lbfgs \\
+    \hline
+  \end{tabular}
+  \caption{Best Parameters for Logistic Regression (Feature 1 and Feature 2)}
+  \label{tab:feature12Params}
+\end{table}
+
 \subsubsection{Transformer}
 The transformer model uses a pre-trained BERT model, which was trained on a downstream task in order to create a multi-label transformer classifier. Binary cross-entropy loss (BCE) with logits (a sigmoid layer) loss was used for loss calculation. BCE is well-suited for binary classification\cite{xu2023learning}. 
 
@@ -345,6 +363,24 @@ The third feature is to only use the annotation inputs. This will be referred to
 
 TF-IDF vectorization was used on the input text. However, in contrast to using a multi-label classifier built on top of a logistic regression model, multi-class classification uses logistic regression directly.
 
+\begin{table}[H]
+  \centering
+  \small
+  \begin{tabular}{|p{6cm}|p{4cm}|}
+    \hline
+    \textbf{Features 1-3 (Same Parameters Found): Best Parameters Found} & \textbf{Value} \\
+    \hline
+    C & 0.1 \\
+    \hline
+    penalty & l1 \\
+    \hline
+    solver & saga \\
+    \hline
+  \end{tabular}
+  \caption{Best Parameters for Logistic Regression (Features 1-3)}
+  \label{tab:feature3Params}
+\end{table}
+
 \subsubsection{Transformer}
 The transformer model is identical to the multi-label transformer, except it was trained on a multi-class downstream task. The number of hidden layers was also decreased due to long training times. The loss calculation was also changed to cross-entropy as it is a better fit for classification tasks\cite{hui2021evaluation}.
 
@@ -406,7 +442,7 @@ Additionally, following figure \ref{fig:statistical test workflow}, Cohen's Kapp
 
 MCC has been adapted for multi-class classification by considering all the true and false positive as well as true and false negatives for each class\cite{mccmulticlass}. This adaptation of the MCC can indicate whether model performance across all classes.
 
-MCC returns a value between 1 and -1, where 1 means perfect predictions, 0 means a prediction that is no better than random, and -1 means total disagreement between predictions and ground truth. MCC follows cutoff point selection of graphs such as an area under a reciever operating characteristic (AUROC) curve\cite{articlesss}\cite{Yang_Berdine_2017}. However, this report will follow arbitrary cutoff points.
+MCC returns a value between 1 and -1, where 1 means perfect predictions, 0 means a prediction that is no better than random, and -1 means total disagreement between predictions and ground truth. MCC follows cutoff point selection of graphs such as an area under a receiver operating characteristic (AUROC) curve\cite{articlesss}\cite{Yang_Berdine_2017}. However, this report will follow arbitrary cutoff points.
 
 \begin{table}[H]
   \centering
@@ -631,6 +667,7 @@ Future work can investigate more sophisticated workflows to understand model beh
 %a challenge is that NLP tasks generally uses one singular text as the input (e.g.,just the review text). However, we still show how investigating feature engineering on the text could provide deeper insights on how the model performs and increases interpretability.
 
 % could expand into studying the use of this on different datasets because it would provide more statistical power (that the models can generalize outside of datasets)
+\newpage
 %==============================
 \bibliographystyle{vancouver}
 \bibliography{literature}
@@ -785,4 +822,5 @@ k & = \text{number of instances}
 
 \includepdf[noautoscale=true, scale=0.75,page=-,fitpaper=true]{pdf_final_code.pdf}
 \includepdf[noautoscale=true, scale=0.75,page=-,fitpaper=true]{pdf_final_visualization_code.pdf}
+
 \end{document}

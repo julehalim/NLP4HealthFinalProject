@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex amia-paper"] 1718083418.8827 "amia-paper.aux" "amia-paper.bbl" "amia-paper" 1718459221.51369 0
+["bibtex amia-paper"] 1718546273.13576 "amia-paper.aux" "amia-paper.bbl" "amia-paper" 1718546298.00324 0
   "./literature.bib" 1718073114 23631 92302da39faa095325e454fea000a4bb ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/bibtex/bst/vancouver/vancouver.bst" 1620930785 40624 ac6ae80a2b874e3abad2798e8fbde6a2 ""
-  "amia-paper.aux" 1718459220 12459 963089c4bb397a0ec8fd3393fb305552 "pdflatex"
+  "amia-paper.aux" 1718546297 13054 5ac49579ab699292da41873bc34f95ca "pdflatex"
   (generated)
   "amia-paper.bbl"
   "amia-paper.blg"
   (rewritten before read)
-["pdflatex"] 1718459196.33541 "c:/Users/julev/Desktop/NLP4HealthFinalProject/latex/amia-paper.tex" "amia-paper.pdf" "amia-paper" 1718459221.51459 0
+["pdflatex"] 1718546273.386 "c:/Users/julev/Desktop/NLP4HealthFinalProject/latex/amia-paper.tex" "amia-paper.pdf" "amia-paper" 1718546298.00369 0
   "C:/Users/julev/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1717909340 96176 40a8022d15c5925d7081b1ad66e03248 ""
   "C:/Users/julev/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1713581573 24236006 680139d74c146c129f07bf66348b57ff ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -163,11 +163,11 @@
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/julev/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "amia-paper.aux" 1718459220 12459 963089c4bb397a0ec8fd3393fb305552 "pdflatex"
-  "amia-paper.bbl" 1718083419 5156 c45df2df1433971d63c1f1abb860f24e "bibtex amia-paper"
-  "amia-paper.out" 1718459220 6654 6ffb1699203637038dd0bdd2a10d9475 "pdflatex"
-  "amia-paper.tex" 1718459195 41703 782cea45692f7abadd92ffb373757de8 ""
-  "c:/Users/julev/Desktop/NLP4HealthFinalProject/latex/amia-paper.tex" 1718459195 41703 782cea45692f7abadd92ffb373757de8 ""
+  "amia-paper.aux" 1718546297 13054 5ac49579ab699292da41873bc34f95ca "pdflatex"
+  "amia-paper.bbl" 1718546273 5156 c45df2df1433971d63c1f1abb860f24e "bibtex amia-paper"
+  "amia-paper.out" 1718546297 6654 882d121026e23e15513acecdc3b5cfdd "pdflatex"
+  "amia-paper.tex" 1718546248 42729 c3b021762becbdd028b518b4814ded9f ""
+  "c:/Users/julev/Desktop/NLP4HealthFinalProject/latex/amia-paper.tex" 1718546248 42729 c3b021762becbdd028b518b4814ded9f ""
   "images/41598_2024_56706_Fig3_HTML.png" 1716724132 291579 e4b2afcb4cc8185b0bc796636d5cafbb ""
   "images/CohensK.png" 1717821795 93974 e34f24d300867da43f182c69d8542c17 ""
   "images/model2_task1_feature1_plot.png" 1716550421 25933 52ac0001529837e026a26e748a19de15 ""
